@@ -2,12 +2,15 @@
 
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import { useChipiPay } from "@/lib/integrations/chipi/provider";
 import { HeroSection } from "@/components/landing/HeroSection";
 import { FeaturesSection } from "@/components/landing/FeaturesSection";
 import { HowItWorks } from "@/components/landing/HowItWorks";
 import { AIProtection } from "@/components/landing/AIProtection";
 import { Testimonials } from "@/components/landing/Testimonials";
 import { Stats } from "@/components/landing/Stats";
+import { TandasSection } from "@/components/landing/TandasSection";
+import { WalletConnectPrompt } from "@/components/landing/WalletConnectPrompt";
 import { CTA } from "@/components/landing/CTA";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
@@ -16,6 +19,7 @@ import Link from "next/link";
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);
+  const { isConnected } = useChipiPay();
 
   useEffect(() => {
     setMounted(true);
@@ -40,6 +44,7 @@ export default function Home() {
       <AIProtection />
       <HowItWorks />
       <Testimonials />
+      {isConnected ? <TandasSection /> : <WalletConnectPrompt />}
       <CTA />
       
       {/* StarkPays + ChipiPay Demo Section */}

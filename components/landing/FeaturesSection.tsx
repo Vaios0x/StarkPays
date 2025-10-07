@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Shield, Zap, Brain, Lock, DollarSign, Clock, Sparkles, Network } from "lucide-react";
+import { Shield, Zap, Brain, Lock, DollarSign, Clock, Sparkles, Network, Users, Target, TrendingUp } from "lucide-react";
 
 const features = [
   {
@@ -46,6 +46,27 @@ const features = [
     title: "Starknet Speed Transfer",
     description: "Dinero en México en 5 minutos vs 3-5 días tradicional usando la velocidad de Starknet",
     color: "from-red-500 to-red-700",
+    neural: true,
+  },
+  {
+    icon: Users,
+    title: "Tandas Neurales",
+    description: "Círculos de ahorro comunitario protegidos por IA. Sin intermediarios bancarios, transparencia total en blockchain",
+    color: "from-indigo-500 to-indigo-700",
+    neural: true,
+  },
+  {
+    icon: Target,
+    title: "AVNU Gas Strategy",
+    description: "Modelo de gas sostenible con AVNU Paymaster. Primeras 10 txs gratis, después pagar con USDC",
+    color: "from-cyan-500 to-cyan-700",
+    neural: true,
+  },
+  {
+    icon: TrendingUp,
+    title: "OpenZeppelin Security",
+    description: "Contratos inteligentes seguros con componentes OpenZeppelin. Ownable, Pausable, ReentrancyGuard",
+    color: "from-orange-500 to-orange-700",
     neural: true,
   },
 ];

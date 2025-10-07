@@ -14,16 +14,22 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "StarkPays Neural - Envía dinero con IA que protege a tu familia",
-  description: "La primera plataforma de remesas con Inteligencia Artificial Neural que detecta fraudes y protege a tu familia. Comisiones desde 0.5%.",
-  keywords: ["remesas", "mexico", "enviar dinero", "starknet", "crypto", "AI", "neural", "blockchain"],
+  title: "StarkPays - Pagos Gratis México",
+  description: "Envía dinero sin comisiones con IA que protege a tu familia. Integrado con Chipi Pay y Starknet.",
+  keywords: ["remesas", "mexico", "enviar dinero", "starknet", "crypto", "AI", "chipi pay", "blockchain", "gasless"],
   openGraph: {
-    title: "StarkPays Neural - IA que protege familias",
-    description: "Envía dinero a México con la seguridad de IA Neural. Comisiones desde 0.5%",
+    title: "StarkPays - Pagos Gratis México",
+    description: "Envía dinero sin comisiones con IA que protege a tu familia",
     images: ["/og-image.png"],
   },
   manifest: "/manifest.json",
   themeColor: "#0ea5e9",
+  viewport: "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "StarkPays",
+  },
 };
 
 export default function RootLayout({

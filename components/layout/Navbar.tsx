@@ -5,7 +5,8 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
   Menu, X, Wallet, Shield, Zap, ChevronDown,
-  BarChart3, Users, Settings, LogOut, Bell, Brain, Sparkles
+  BarChart3, Users, Settings, LogOut, Bell, Brain, Sparkles,
+  Bitcoin, Trophy
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -41,12 +42,15 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navItems = [
-    { name: "Enviar", href: "/send", icon: Zap },
-    { name: "Recibir", href: "/receive", icon: Wallet },
-    { name: "Historial", href: "/historial", icon: BarChart3 },
-    { name: "Bóveda Neural", href: "/family-vault", icon: Shield },
-  ];
+const navItems = [
+  { name: "Enviar", href: "/send", icon: Zap },
+  { name: "Recibir", href: "/receive", icon: Wallet },
+  { name: "Tandas", href: "/tandas", icon: Users },
+  { name: "Bitcoin", href: "/bitcoin", icon: Bitcoin },
+  { name: "Privacidad", href: "/privacy", icon: Shield },
+  { name: "Gaming", href: "/gaming", icon: Trophy },
+  { name: "Historial", href: "/historial", icon: BarChart3 },
+];
 
   return (
     <motion.nav
@@ -138,6 +142,12 @@ export function Navbar() {
                       <Link href="/dashboard">
                         <BarChart3 className="w-4 h-4 mr-2" />
                         Dashboard Neural
+                      </Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem asChild className="text-dark-200 hover:text-neural-400 hover:bg-glass-white">
+                      <Link href="/tandas">
+                        <Users className="w-4 h-4 mr-2" />
+                        Mis Tandas
                       </Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild className="text-dark-200 hover:text-neural-400 hover:bg-glass-white">

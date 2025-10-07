@@ -1,7 +1,7 @@
 {
-  "name": "Remesa 2.0 - IA Protección Familiar",
-  "short_name": "Remesa 2.0",
-  "description": "Envía dinero con IA que protege a tu familia",
+  "name": "StarkPays - Pagos Gratis México",
+  "short_name": "StarkPays",
+  "description": "Envía dinero sin comisiones con IA que protege a tu familia",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
@@ -9,13 +9,13 @@
   "orientation": "portrait",
   "icons": [
     {
-      "src": "/icon-192.png",
+      "src": "/icons/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any maskable"
     },
     {
-      "src": "/icon-512.png",
+      "src": "/icons/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any maskable"
@@ -42,13 +42,20 @@
       "short_name": "Enviar",
       "description": "Enviar dinero rápido",
       "url": "/send",
-      "icons": [{ "src": "/icon-send.png", "sizes": "96x96" }]
+      "icons": [{ "src": "/icons/icon-send.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Recibir Dinero",
+      "short_name": "Recibir",
+      "description": "Recibir pagos",
+      "url": "/receive",
+      "icons": [{ "src": "/icons/icon-receive.png", "sizes": "96x96" }]
     },
     {
       "name": "Bóveda Familiar",
       "short_name": "Bóveda",
       "url": "/family-vault",
-      "icons": [{ "src": "/icon-vault.png", "sizes": "96x96" }]
+      "icons": [{ "src": "/icons/icon-vault.png", "sizes": "96x96" }]
     }
   ]
 }

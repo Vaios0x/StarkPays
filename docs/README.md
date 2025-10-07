@@ -12,6 +12,7 @@
 - **Invisible wallet creation** automática
 - **Gasless transactions** para primeros usuarios
 - **Código:** `lib/integrations/chipi/`
+- **Demo:** Video 0:30-1:00
 
 ### 2. OpenZeppelin Contracts ($3,000)
 - **ERC20Component, OwnableComponent**
@@ -171,9 +172,9 @@ npm run deploy:mainnet
 
 ## 📚 Documentación Adicional
 
-- [CHIPI_INTEGRATION.md](./docs/CHIPI_INTEGRATION.md) - Integración Chipi Pay
-- [AVNU_GASLESS.md](./docs/AVNU_GASLESS.md) - AVNU Paymaster
-- [OPENZEPPELIN_SECURITY.md](./docs/OPENZEPPELIN_SECURITY.md) - Patrones de seguridad
+- [CHIPI_INTEGRATION.md](./CHIPI_INTEGRATION.md) - Integración Chipi Pay
+- [AVNU_GASLESS.md](./AVNU_GASLESS.md) - AVNU Paymaster
+- [OPENZEPPELIN_SECURITY.md](./OPENZEPPELIN_SECURITY.md) - Patrones de seguridad
 
 ## 🏆 Resultado Esperado
 

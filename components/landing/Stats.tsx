@@ -3,36 +3,64 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { TrendingUp, Users, Shield, DollarSign } from "lucide-react";
+import { TrendingUp, Users, Shield, DollarSign, Target, Brain, Zap, Network } from "lucide-react";
 
 const stats = [
   { 
-    number: "63.3B", 
-    label: "Mercado México (USD)", 
+    number: "61B", 
+    label: "Mercado Remesas (USD)", 
     suffix: "",
     icon: TrendingUp,
     color: "from-blue-500 to-blue-700"
   },
   { 
     number: "50M", 
-    label: "Sin cuenta bancaria", 
+    label: "Mexicanos no bancarizados", 
     suffix: "",
     icon: Users,
     color: "from-purple-500 to-purple-700"
   },
   { 
-    number: "35%", 
-    label: "Sufren fraude telefónico", 
+    number: "92%", 
+    label: "Reducción en fees", 
     suffix: "",
     icon: Shield,
-    color: "from-red-500 to-red-700"
+    color: "from-green-500 to-green-700"
   },
   { 
     number: "0%", 
     label: "Gas fees con ChipiPay", 
     suffix: "",
     icon: DollarSign,
-    color: "from-green-500 to-green-700"
+    color: "from-emerald-500 to-emerald-700"
+  },
+  { 
+    number: "47", 
+    label: "Tandas Activas", 
+    suffix: "",
+    icon: Target,
+    color: "from-indigo-500 to-indigo-700"
+  },
+  { 
+    number: "98.7%", 
+    label: "Tasa de éxito IA", 
+    suffix: "",
+    icon: Brain,
+    color: "from-yellow-500 to-yellow-700"
+  },
+  { 
+    number: "0.3s", 
+    label: "Velocidad ChipiPay", 
+    suffix: "",
+    icon: Zap,
+    color: "from-orange-500 to-orange-700"
+  },
+  { 
+    number: "24/7", 
+    label: "Protección Starknet", 
+    suffix: "",
+    icon: Network,
+    color: "from-cyan-500 to-cyan-700"
   },
 ];
 
@@ -83,7 +111,7 @@ export function Stats() {
       })}
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-6">
           {stats.map((stat, index) => (
             <motion.div
               key={stat.label}

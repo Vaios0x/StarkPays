@@ -21,7 +21,6 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { AIGuardian } from "@/components/dashboard/AIGuardian";
 import { toast } from "sonner";
@@ -71,7 +70,6 @@ export default function ReceivePage() {
 
   return (
     <main className="min-h-screen bg-dark-950 relative overflow-hidden">
-      <Navbar />
       
       {/* Neural Background */}
       <div className="absolute inset-0 bg-neural-mesh opacity-20" />

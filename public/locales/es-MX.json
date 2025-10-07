@@ -1,0 +1,142 @@
+{
+  "common": {
+    "send": "Enviar",
+    "receive": "Recibir",
+    "free": "Gratis",
+    "instant": "Instantáneo",
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "back": "Volver",
+    "next": "Siguiente",
+    "done": "Listo"
+  },
+  "onboarding": {
+    "welcome": "Bienvenido a StarkPays",
+    "tagline": "Envía dinero sin comisiones con IA que protege a tu familia",
+    "get_started": "Comenzar",
+    "connect_wallet": "Conectar Wallet",
+    "create_account": "Crear Cuenta"
+  },
+  "payments": {
+    "send_money": "Enviar Dinero",
+    "receive_money": "Recibir Dinero",
+    "recipient": "Destinatario",
+    "amount": "Cantidad",
+    "message": "Mensaje",
+    "gas_free": "Sin comisiones de gas",
+    "powered_by": "Patrocinado por Chipi Pay",
+    "transaction_fee": "Comisión de transacción",
+    "total_cost": "Costo total",
+    "estimated_time": "Tiempo estimado",
+    "confirm_transaction": "Confirmar Transacción",
+    "transaction_success": "Transacción exitosa",
+    "transaction_failed": "Transacción falló"
+  },
+  "tandas": {
+    "title": "Tandas Neurales",
+    "create_tanda": "Crear Tanda",
+    "join_tanda": "Unirse a Tanda",
+    "contribute": "Contribuir",
+    "payout": "Pago",
+    "members": "Miembros",
+    "contribution_amount": "Monto de contribución",
+    "frequency": "Frecuencia",
+    "max_members": "Máximo de miembros",
+    "total_pool": "Total del pool",
+    "next_contribution": "Próxima contribución",
+    "round": "Ronda",
+    "status": {
+      "active": "Activa",
+      "completed": "Completada",
+      "cancelled": "Cancelada"
+    }
+  },
+  "ai": {
+    "protection": "Protección IA",
+    "fraud_detection": "Detección de fraudes",
+    "pattern_analysis": "Análisis de patrones",
+    "trust_score": "Score de confianza",
+    "security_analysis": "Análisis de seguridad",
+    "risk_assessment": "Evaluación de riesgo",
+    "neural_guardian": "Guardian Neural",
+    "ai_active": "IA Activa",
+    "threat_detected": "Amenaza detectada",
+    "safe_transaction": "Transacción segura"
+  },
+  "wallet": {
+    "connect": "Conectar",
+    "disconnect": "Desconectar",
+    "balance": "Balance",
+    "address": "Dirección",
+    "transactions": "Transacciones",
+    "gasless": "Sin gas",
+    "sponsored": "Patrocinado"
+  },
+  "navigation": {
+    "home": "Inicio",
+    "send": "Enviar",
+    "receive": "Recibir",
+    "tandas": "Tandas",
+    "family_vault": "Bóveda Familiar",
+    "history": "Historial",
+    "settings": "Configuración"
+  },
+  "errors": {
+    "wallet_not_connected": "Wallet no conectada",
+    "insufficient_balance": "Balance insuficiente",
+    "transaction_failed": "Transacción falló",
+    "network_error": "Error de red",
+    "invalid_address": "Dirección inválida",
+    "amount_too_small": "Monto muy pequeño",
+    "amount_too_large": "Monto muy grande",
+    "tanda_full": "Tanda llena",
+    "not_member": "No eres miembro",
+    "fraud_detected": "Fraude detectado"
+  },
+  "success": {
+    "wallet_connected": "Wallet conectada",
+    "transaction_sent": "Transacción enviada",
+    "tanda_created": "Tanda creada",
+    "joined_tanda": "Te uniste a la tanda",
+    "contribution_made": "Contribución realizada",
+    "payout_received": "Pago recibido"
+  },
+  "notifications": {
+    "new_transaction": "Nueva transacción",
+    "tanda_update": "Actualización de tanda",
+    "security_alert": "Alerta de seguridad",
+    "payment_received": "Pago recibido",
+    "contribution_due": "Contribución pendiente"
+  },
+  "stats": {
+    "total_volume": "Volumen total",
+    "total_transactions": "Total de transacciones",
+    "active_tandas": "Tandas activas",
+    "members_online": "Miembros en línea",
+    "fraud_prevented": "Fraudes prevenidos",
+    "money_saved": "Dinero ahorrado"
+  },
+  "time": {
+    "now": "Ahora",
+    "minutes_ago": "hace {count} minutos",
+    "hours_ago": "hace {count} horas",
+    "days_ago": "hace {count} días",
+    "weeks_ago": "hace {count} semanas",
+    "months_ago": "hace {count} meses"
+  },
+  "currency": {
+    "usd": "USD",
+    "mxn": "MXN",
+    "usdc": "USDC",
+    "usdt": "USDT"
+  },
+  "frequency": {
+    "daily": "Diario",
+    "weekly": "Semanal",
+    "biweekly": "Quincenal",
+    "monthly": "Mensual"
+  }
+}

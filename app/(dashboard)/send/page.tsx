@@ -7,7 +7,6 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Card } from "@/components/ui/card";
-import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { useChipiPay } from "@/lib/chipi/useChipiPay";
 import { toast } from "sonner";
@@ -99,7 +98,6 @@ export default function SendPage() {
 
   return (
     <main className="min-h-screen bg-dark-950 relative overflow-hidden">
-      <Navbar />
       
       {/* Neural Background */}
       <div className="absolute inset-0 bg-neural-mesh opacity-20" />

@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { ArrowRight, Shield, Brain, Zap, CheckCircle2 } from "lucide-react";
+import { ArrowRight, Shield, Brain, Zap, CheckCircle2, Users, Target, TrendingUp } from "lucide-react";
 
 const steps = [
   {
@@ -33,6 +33,20 @@ const steps = [
     description: "Tu familia recibe el dinero en 5 minutos con protección Starknet activada",
     icon: CheckCircle2,
     color: "from-green-500 to-green-700",
+  },
+  {
+    number: "05",
+    title: "Tandas Neurales",
+    description: "Crea círculos de ahorro comunitario protegidos por IA. Sin intermediarios bancarios",
+    icon: Users,
+    color: "from-indigo-500 to-indigo-700",
+  },
+  {
+    number: "06",
+    title: "AVNU Gas Strategy",
+    description: "Modelo sostenible: primeras 10 txs gratis, después pagar gas con USDC",
+    icon: Target,
+    color: "from-cyan-500 to-cyan-700",
   },
 ];
 

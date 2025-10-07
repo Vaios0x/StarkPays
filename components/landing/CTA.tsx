@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { ArrowRight, Shield, Zap, DollarSign, CheckCircle2 } from "lucide-react";
+import { ArrowRight, Shield, Zap, DollarSign, CheckCircle2, Users, Target, Brain } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
@@ -11,7 +11,9 @@ const benefits = [
   { icon: Shield, text: "Starknet Security 24/7" },
   { icon: Zap, text: "ChipiPay Speed" },
   { icon: DollarSign, text: "0% Gas Fees" },
-  { icon: CheckCircle2, text: "Starknet + ChipiPay" },
+  { icon: Users, text: "Tandas Neurales" },
+  { icon: Target, text: "AVNU Gas Strategy" },
+  { icon: Brain, text: "IA Protection" },
 ];
 
 export function CTA() {
@@ -36,12 +38,12 @@ export function CTA() {
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
             Protege a tu familia
             <br />
-            <span className="text-primary-100">con Starknet + ChipiPay</span>
+            <span className="text-primary-100">con StarkPays Neural</span>
           </h2>
           
           <p className="text-xl text-primary-100 mb-8 max-w-3xl mx-auto">
-            Únete a miles de familias que ya usan Starknet + ChipiPay para enviar 
-            dinero con 0% gas fees, de forma segura y rápida.
+            Únete a miles de familias que ya usan StarkPays para enviar dinero con 0% gas fees, 
+            crear tandas comunitarias y protección IA automática.
           </p>
 
           {/* Benefits */}
@@ -67,18 +69,21 @@ export function CTA() {
                 size="lg" 
                 className="group bg-white text-primary-600 hover:bg-gray-100 shadow-2xl hover:shadow-3xl transition-all text-lg px-8 py-4"
               >
-                Empezar con ChipiPay
+                Enviar Dinero Gratis
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </Button>
             </Link>
             
-            <Button 
-              size="lg" 
-              variant="outline"
-              className="border-2 border-white text-white hover:bg-white/10 text-lg px-8 py-4"
-            >
-              Ver demo Starknet
-            </Button>
+            <Link href="/tandas">
+              <Button 
+                size="lg" 
+                variant="outline"
+                className="border-2 border-white text-white hover:bg-white/10 text-lg px-8 py-4"
+              >
+                <Users className="w-5 h-5 mr-2" />
+                Crear Tanda Neural
+              </Button>
+            </Link>
           </div>
 
           {/* Trust Indicators */}

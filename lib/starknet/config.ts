@@ -1,27 +1,59 @@
 import { sepolia, mainnet } from "@starknet-react/chains";
 
 export const STARKNET_CONFIG = {
-  chains: [mainnet, sepolia],
-  contracts: {
-    remesaVault: {
-      address: "0x0", // Will be set after deployment
-      abi: require("@/contracts/target/dev/remesa_vault_RemesaVault.contract_class.json").abi,
+  // Redes soportadas
+  networks: {
+    sepolia: {
+      ...sepolia,
+      name: "Starknet Sepolia",
+      rpcUrl: "https://starknet-sepolia.public.blastapi.io/rpc/v0_7",
+    },
+    mainnet: {
+      ...mainnet,
+      name: "Starknet Mainnet",
+      rpcUrl: "https://starknet-mainnet.public.blastapi.io/rpc/v0_7",
     },
   },
-  tokens: {
+  
+  // Configuración de contratos
+  contracts: {
+    sepolia: {
+      remesaVault: "0x1234567890abcdef1234567890abcdef12345678", // Mock address
+      usdc: "0x1234567890abcdef1234567890abcdef12345679", // Mock USDC
+    },
+    mainnet: {
+      remesaVault: "0x1234567890abcdef1234567890abcdef12345678", // Mock address
+      usdc: "0x1234567890abcdef1234567890abcdef12345679", // Mock USDC
+    },
+  },
+  
+  // Configuración de gas
+  gas: {
+    maxFee: "0x1000000000000", // 1 ETH
+    maxPriorityFee: "0x100000000000", // 0.1 ETH
+  },
+  
+  // Configuración de tokens soportados
+  supportedTokens: {
     USDC: {
-      address: "0x053c91253bc9682c04929ca02ed00b3e423f6710d2ee7e0d5ebb06f3ecf368a8",
+      address: "0x1234567890abcdef1234567890abcdef12345679",
       decimals: 6,
       symbol: "USDC",
+      name: "USD Coin",
     },
-    STRK: {
-      address: "0x04718f5a0fc34cc1af16a1cdee98ffb20c31f5cd61d6ab07201858f4287c938d",
-      decimals: 18,
-      symbol: "STRK",
+    USDT: {
+      address: "0x1234567890abcdef1234567890abcdef12345680",
+      decimals: 6,
+      symbol: "USDT",
+      name: "Tether USD",
     },
   },
 };
 
-export const REOWN_PROJECT_ID = process.env.NEXT_PUBLIC_REOWN_PROJECT_ID!;
-export const CHIPI_API_KEY = process.env.NEXT_PUBLIC_CHIPI_API_KEY!;
-export const OPENAI_API_KEY = process.env.OPENAI_API_KEY!;
+export const getNetworkConfig = (chainId: string) => {
+  return STARKNET_CONFIG.networks[chainId as keyof typeof STARKNET_CONFIG.networks] || STARKNET_CONFIG.networks.sepolia;
+};
+
+export const getContractAddress = (chainId: string, contract: string) => {
+  return STARKNET_CONFIG.contracts[chainId as keyof typeof STARKNET_CONFIG.contracts]?.[contract as keyof typeof STARKNET_CONFIG.contracts.sepolia] || "";
+};
