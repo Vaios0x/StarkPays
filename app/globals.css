@@ -1,0 +1,243 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Neural Network Base Styles */
+@layer base {
+  html {
+    @apply dark:bg-dark-950;
+  }
+  
+  body {
+    @apply bg-dark-950 text-dark-50 font-neural antialiased;
+    background-image: 
+      radial-gradient(circle at 20% 50%, rgba(14, 165, 233, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 40% 80%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
+    background-size: 100% 100%, 100% 100%, 100% 100%;
+    background-attachment: fixed;
+  }
+
+  * {
+    @apply border-dark-800;
+  }
+}
+
+/* Neural Network Animations */
+@keyframes neural-pulse {
+  0%, 100% { 
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% { 
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes neural-float {
+  0%, 100% { 
+    transform: translateY(0px) translateX(0px);
+  }
+  25% { 
+    transform: translateY(-20px) translateX(10px);
+  }
+  50% { 
+    transform: translateY(-10px) translateX(-5px);
+  }
+  75% { 
+    transform: translateY(-30px) translateX(15px);
+  }
+}
+
+@keyframes neural-glow {
+  0%, 100% { 
+    box-shadow: 0 0 20px rgba(14, 165, 233, 0.3), 0 0 40px rgba(59, 130, 246, 0.2);
+  }
+  50% { 
+    box-shadow: 0 0 40px rgba(14, 165, 233, 0.6), 0 0 80px rgba(59, 130, 246, 0.4);
+  }
+}
+
+@keyframes neural-mesh {
+  0%, 100% { 
+    background-position: 0% 50%;
+  }
+  50% { 
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes glass-shimmer {
+  0% { 
+    background-position: -200% 0;
+  }
+  100% { 
+    background-position: 200% 0;
+  }
+}
+
+@keyframes neural-connect {
+  0% { 
+    transform: translateX(-100%);
+  }
+  100% { 
+    transform: translateX(100%);
+  }
+}
+
+/* Glassmorphism Components */
+@layer components {
+  .glass {
+    @apply bg-glass-white backdrop-blur-xl border border-glass-white-20;
+    box-shadow: 
+      0 8px 32px rgba(0, 0, 0, 0.1),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  }
+
+  .glass-dark {
+    @apply bg-glass-black backdrop-blur-xl border border-glass-black-20;
+    box-shadow: 
+      0 8px 32px rgba(0, 0, 0, 0.3),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+
+  .glass-card {
+    @apply glass rounded-2xl p-6;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+  }
+
+  .glass-card-dark {
+    @apply glass-dark rounded-2xl p-6;
+    background: linear-gradient(135deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.05) 100%);
+  }
+
+  .neural-text {
+    @apply bg-neural-gradient bg-clip-text text-transparent;
+    background-size: 200% 200%;
+    animation: neural-mesh 8s ease-in-out infinite;
+  }
+
+  .neural-glow {
+    @apply shadow-neural;
+    animation: neural-glow 3s ease-in-out infinite;
+  }
+
+  .neural-float {
+    animation: neural-float 6s ease-in-out infinite;
+  }
+
+  .neural-pulse {
+    animation: neural-pulse 4s ease-in-out infinite;
+  }
+
+  .neural-mesh-bg {
+    background-image: 
+      radial-gradient(circle at 20% 50%, rgba(14, 165, 233, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 40% 80%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
+    background-size: 100% 100%, 100% 100%, 100% 100%;
+    animation: neural-mesh 8s ease-in-out infinite;
+  }
+
+  .neural-connection {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .neural-connection::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #0ea5e9, #3b82f6, #8b5cf6, transparent);
+    animation: neural-connect 10s linear infinite;
+  }
+
+  .glass-button {
+    @apply glass rounded-xl px-6 py-3 font-medium transition-all duration-300;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+  }
+
+  .glass-button:hover {
+    @apply bg-glass-white-20 shadow-glass-lg transform -translate-y-1;
+  }
+
+  .neural-button {
+    @apply bg-neural-gradient text-white rounded-xl px-6 py-3 font-medium transition-all duration-300;
+    background-size: 200% 200%;
+    animation: neural-mesh 8s ease-in-out infinite;
+  }
+
+  .neural-button:hover {
+    @apply shadow-neural-lg transform -translate-y-1;
+    animation: neural-glow 3s ease-in-out infinite;
+  }
+}
+
+/* Neural Network Utilities */
+@layer utilities {
+  .text-neural {
+    background: linear-gradient(135deg, #0ea5e9 0%, #3b82f6 50%, #8b5cf6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-neural-mesh {
+    background-image: 
+      radial-gradient(circle at 20% 50%, rgba(14, 165, 233, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 40% 80%, rgba(139, 92, 246, 0.1) 0%, transparent 50%);
+    background-size: 100% 100%, 100% 100%, 100% 100%;
+  }
+
+  .neural-border {
+    border: 1px solid transparent;
+    background: linear-gradient(135deg, rgba(14, 165, 233, 0.2), rgba(59, 130, 246, 0.2), rgba(139, 92, 246, 0.2)) border-box;
+    background-clip: padding-box;
+  }
+
+  .neural-shadow {
+    box-shadow: 
+      0 0 20px rgba(14, 165, 233, 0.3),
+      0 0 40px rgba(59, 130, 246, 0.2),
+      0 0 60px rgba(139, 92, 246, 0.1);
+  }
+
+  .neural-shadow-lg {
+    box-shadow: 
+      0 0 40px rgba(14, 165, 233, 0.4),
+      0 0 80px rgba(59, 130, 246, 0.3),
+      0 0 120px rgba(139, 92, 246, 0.2);
+  }
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-dark-900;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-neural-gradient rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-neural-600;
+}
+
+/* Selection Styling */
+::selection {
+  @apply bg-neural-500 text-white;
+}
+
+/* Focus Styling */
+*:focus-visible {
+  @apply outline-none ring-2 ring-neural-500 ring-offset-2 ring-offset-dark-950;
+}
