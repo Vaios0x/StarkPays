@@ -12,16 +12,12 @@ const withNextIntl = require('next-intl/plugin')(
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  experimental: {
-    optimizePackageImports: ['lucide-react'],
-  },
   images: {
     domains: ['api.dicebear.com', 'avatars.githubusercontent.com'],
   },
   typescript: {
     ignoreBuildErrors: true,
   },
-  transpilePackages: ['framer-motion'],
   webpack: (config, { isServer }) => {
     if (!isServer) {
       config.resolve.fallback = {
@@ -32,15 +28,6 @@ const nextConfig = {
       };
     }
     config.externals.push('pino-pretty', 'lokijs', 'encoding');
-    
-    // Handle framer-motion properly
-    config.module.rules.push({
-      test: /\.m?js$/,
-      resolve: {
-        fullySpecified: false,
-      },
-    });
-    
     return config;
   },
 };
