@@ -1,0 +1,33 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="neuralGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#3b82f6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="256" cy="256" r="240" fill="url(#neuralGradient)" opacity="0.1"/>
+  
+  <!-- Main Brain Icon -->
+  <path d="M256 80c-60 0-120 40-120 100 0 20 5 40 15 60-10 20-15 40-15 60 0 60 40 100 100 100s100-40 100-100c0-20-5-40-15-60 10-20 15-40 15-60 0-60-60-100-120-100z" 
+        fill="url(#neuralGradient)" 
+        stroke="#ffffff" 
+        stroke-width="4"/>
+  
+  <!-- Neural Network Lines -->
+  <path d="M180 200c20-10 40-10 60 0" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.8"/>
+  <path d="M270 200c20 10 40 10 60 0" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.8"/>
+  <path d="M200 280c30-20 60-20 90 0" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.8"/>
+  <path d="M220 320c20-10 40-10 60 0" stroke="#ffffff" stroke-width="2" fill="none" opacity="0.8"/>
+  
+  <!-- Neural Nodes -->
+  <circle cx="200" cy="200" r="4" fill="#ffffff" opacity="0.9"/>
+  <circle cx="310" cy="200" r="4" fill="#ffffff" opacity="0.9"/>
+  <circle cx="240" cy="280" r="4" fill="#ffffff" opacity="0.9"/>
+  <circle cx="250" cy="320" r="4" fill="#ffffff" opacity="0.9"/>
+  
+  <!-- Text -->
+  <text x="256" y="420" text-anchor="middle" fill="#ffffff" font-family="Arial, sans-serif" font-size="24" font-weight="bold">StarkPays</text>
+</svg>

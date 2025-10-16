@@ -5,36 +5,39 @@ import Link from "next/link";
 import { 
   Shield, Twitter, Github, MessageCircle, Mail, Brain, 
   Sparkles, Network, Zap, Lock, Globe, ArrowRight,
-  Phone, MapPin, Clock, Users, TrendingUp, ShieldCheck
+  Users, TrendingUp, ShieldCheck
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { useTranslations } from "next-intl";
 
 export function Footer() {
+  const t = useTranslations();
+  
   const footerLinks = {
     producto: [
-      { name: "Neural Guardian AI", href: "/ai-protection", icon: Brain },
-      { name: "Smart Routing", href: "/smart-routing", icon: Zap },
-      { name: "Family Vault", href: "/family-vault", icon: Lock },
-      { name: "API Neural", href: "/developers", icon: Network },
+      { name: t('footer.neural_guardian'), href: "/ai-protection", icon: Brain },
+      { name: t('footer.smart_routing'), href: "/smart-routing", icon: Zap },
+      { name: t('footer.family_vault'), href: "/family-vault", icon: Lock },
+      { name: t('footer.api_neural'), href: "/developers", icon: Network },
     ],
     empresa: [
-      { name: "Sobre StarkPays", href: "/about", icon: Users },
-      { name: "Blog Neural", href: "/blog", icon: Brain },
-      { name: "Carreras", href: "/careers", icon: TrendingUp },
-      { name: "Prensa", href: "/press", icon: Globe },
+      { name: t('footer.about'), href: "/about", icon: Users },
+      { name: t('footer.blog'), href: "/blog", icon: Brain },
+      { name: t('footer.careers'), href: "/careers", icon: TrendingUp },
+      { name: t('footer.press'), href: "/press", icon: Globe },
     ],
     legal: [
-      { name: "Términos Neural", href: "/terms", icon: ShieldCheck },
-      { name: "Privacidad ZK", href: "/privacy", icon: Lock },
-      { name: "Cookies", href: "/cookies", icon: Shield },
-      { name: "Cumplimiento", href: "/compliance", icon: ShieldCheck },
+      { name: t('footer.terms'), href: "/terms", icon: ShieldCheck },
+      { name: t('footer.privacy'), href: "/privacy", icon: Lock },
+      { name: t('footer.cookies'), href: "/cookies", icon: Shield },
+      { name: t('footer.compliance'), href: "/compliance", icon: ShieldCheck },
     ],
     soporte: [
-      { name: "Centro Neural", href: "/help", icon: Brain },
-      { name: "Estado del Sistema", href: "https://status.starkpays.com", icon: Network },
-      { name: "Contacto", href: "/contact", icon: MessageCircle },
-      { name: "Reportar Fraude", href: "/report-fraud", icon: Shield },
+      { name: t('footer.help'), href: "/help", icon: Brain },
+      { name: t('footer.status'), href: "https://status.starkpays.com", icon: Network },
+      { name: t('footer.contact'), href: "/contact", icon: MessageCircle },
+      { name: t('footer.report_fraud'), href: "/report-fraud", icon: Shield },
     ],
   };
 
@@ -45,11 +48,6 @@ export function Footer() {
     { name: "Email", href: "mailto:hello@starkpays.com", icon: Mail },
   ];
 
-  const contactInfo = [
-    { icon: Phone, text: "+1 (555) 123-4567", href: "tel:+15551234567" },
-    { icon: MapPin, text: "San Francisco, CA", href: "#" },
-    { icon: Clock, text: "24/7 Neural Support", href: "#" },
-  ];
 
   return (
     <footer className="bg-dark-950 relative overflow-hidden">
@@ -117,22 +115,8 @@ export function Footer() {
               </div>
               
               <p className="text-dark-300 leading-relaxed">
-                La primera plataforma de remesas con Inteligencia Artificial Neural 
-                que protege familias con tecnología blockchain avanzada.
+                {t('footer.description')}
               </p>
-
-              <div className="space-y-3">
-                {contactInfo.map((info, index) => (
-                  <motion.div
-                    key={index}
-                    whileHover={{ x: 5 }}
-                    className="flex items-center space-x-3 text-dark-300 hover:text-neural-400 transition-colors"
-                  >
-                    <info.icon className="w-4 h-4 text-neural-400" />
-                    <span className="text-sm">{info.text}</span>
-                  </motion.div>
-                ))}
-              </div>
             </motion.div>
           </div>
 
@@ -146,9 +130,9 @@ export function Footer() {
               className="space-y-6"
             >
               <h5 className="text-lg font-bold text-dark-100 capitalize">
-                {category === 'producto' ? 'Neural Product' : 
-                 category === 'empresa' ? 'Company' :
-                 category === 'legal' ? 'Legal Neural' : 'Neural Support'}
+                {category === 'producto' ? t('footer.neural_product') : 
+                 category === 'empresa' ? t('footer.company') :
+                 category === 'legal' ? t('footer.legal_neural') : t('footer.neural_support')}
               </h5>
               
               <ul className="space-y-4">
@@ -182,19 +166,19 @@ export function Footer() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
               <div className="text-3xl font-bold neural-text mb-2">99.7%</div>
-              <div className="text-sm text-dark-300">Precisión Neural</div>
+              <div className="text-sm text-dark-300">{t('footer.neural_stats.precision')}</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold neural-text mb-2">24/7</div>
-              <div className="text-sm text-dark-300">Monitoreo IA</div>
+              <div className="text-sm text-dark-300">{t('footer.neural_stats.monitoring')}</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold neural-text mb-2">0.3s</div>
-              <div className="text-sm text-dark-300">Análisis Neural</div>
+              <div className="text-sm text-dark-300">{t('footer.neural_stats.analysis')}</div>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold neural-text mb-2">10K+</div>
-              <div className="text-sm text-dark-300">Familias Protegidas</div>
+              <div className="text-sm text-dark-300">{t('footer.neural_stats.families')}</div>
             </div>
           </div>
         </motion.div>
@@ -239,9 +223,9 @@ export function Footer() {
             ))}
           </div>
 
-          <div className="text-center lg:text-right">
+            <div className="text-center lg:text-right">
             <p className="text-sm text-dark-400 mb-2">
-              © 2025 StarkPays Neural. Todos los derechos reservados.
+              {t('footer.copyright')}
             </p>
             <div className="flex items-center justify-center lg:justify-end space-x-4 text-xs text-dark-500 mb-2">
               <span className="flex items-center space-x-1">
@@ -255,7 +239,7 @@ export function Footer() {
             </div>
             <div className="flex items-center justify-center lg:justify-end">
               <p className="text-xs text-dark-500">
-                Made by{" "}
+                {t('footer.made_by')}{" "}
                 <Link 
                   href="https://x.com/vaiossx" 
                   target="_blank" 

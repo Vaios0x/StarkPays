@@ -4,76 +4,78 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Shield, Zap, Brain, Lock, DollarSign, Clock, Sparkles, Network, Users, Target, TrendingUp } from "lucide-react";
-
-const features = [
-  {
-    icon: Brain,
-    title: "Starknet Guardian AI",
-    description: "IA neural en Starknet que detecta patrones anormales y bloquea fraudes en tiempo real con 99.7% de precisión",
-    color: "from-purple-500 to-purple-700",
-    neural: true,
-  },
-  {
-    icon: Zap,
-    title: "ChipiPay Smart Routing",
-    description: "ChipiPay + IA neural elige automáticamente la ruta más barata y rápida con 0% gas fees",
-    color: "from-yellow-500 to-orange-500",
-    neural: true,
-  },
-  {
-    icon: Lock,
-    title: "Starknet Privacy Shield",
-    description: "ZK-proofs de Starknet ocultan montos pero permiten verificación familiar con tecnología blockchain",
-    color: "from-green-500 to-green-700",
-    neural: true,
-  },
-  {
-    icon: Shield,
-    title: "Starknet Family Vault",
-    description: "El receptor puede bloquear retiros si sospecha extorsión usando contratos inteligentes de Starknet",
-    color: "from-blue-500 to-blue-700",
-    neural: true,
-  },
-  {
-    icon: DollarSign,
-    title: "ChipiPay Zero Gas Fees",
-    description: "0% gas fees vs 3-5% de competidores gracias a ChipiPay y optimización de Starknet",
-    color: "from-emerald-500 to-emerald-700",
-    neural: true,
-  },
-  {
-    icon: Clock,
-    title: "Starknet Speed Transfer",
-    description: "Dinero en México en 5 minutos vs 3-5 días tradicional usando la velocidad de Starknet",
-    color: "from-red-500 to-red-700",
-    neural: true,
-  },
-  {
-    icon: Users,
-    title: "Tandas Neurales",
-    description: "Círculos de ahorro comunitario protegidos por IA. Sin intermediarios bancarios, transparencia total en blockchain",
-    color: "from-indigo-500 to-indigo-700",
-    neural: true,
-  },
-  {
-    icon: Target,
-    title: "AVNU Gas Strategy",
-    description: "Modelo de gas sostenible con AVNU Paymaster. Primeras 10 txs gratis, después pagar con USDC",
-    color: "from-cyan-500 to-cyan-700",
-    neural: true,
-  },
-  {
-    icon: TrendingUp,
-    title: "OpenZeppelin Security",
-    description: "Contratos inteligentes seguros con componentes OpenZeppelin. Ownable, Pausable, ReentrancyGuard",
-    color: "from-orange-500 to-orange-700",
-    neural: true,
-  },
-];
+import { useTranslations } from "next-intl";
 
 export function FeaturesSection() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
+  const t = useTranslations();
+
+  const features = [
+    {
+      icon: Brain,
+      title: t('features.neural_guardian.title'),
+      description: t('features.neural_guardian.description'),
+      color: "from-purple-500 to-purple-700",
+      neural: true,
+    },
+    {
+      icon: Zap,
+      title: t('features.smart_routing.title'),
+      description: t('features.smart_routing.description'),
+      color: "from-yellow-500 to-orange-500",
+      neural: true,
+    },
+    {
+      icon: Lock,
+      title: t('features.privacy_shield.title'),
+      description: t('features.privacy_shield.description'),
+      color: "from-green-500 to-green-700",
+      neural: true,
+    },
+    {
+      icon: Shield,
+      title: t('features.family_vault.title'),
+      description: t('features.family_vault.description'),
+      color: "from-blue-500 to-blue-700",
+      neural: true,
+    },
+    {
+      icon: DollarSign,
+      title: t('features.zero_gas.title'),
+      description: t('features.zero_gas.description'),
+      color: "from-emerald-500 to-emerald-700",
+      neural: true,
+    },
+    {
+      icon: Clock,
+      title: t('features.speed_transfer.title'),
+      description: t('features.speed_transfer.description'),
+      color: "from-red-500 to-red-700",
+      neural: true,
+    },
+    {
+      icon: Users,
+      title: t('features.neural_tandas.title'),
+      description: t('features.neural_tandas.description'),
+      color: "from-indigo-500 to-indigo-700",
+      neural: true,
+    },
+    {
+      icon: Target,
+      title: t('features.avnu_gas.title'),
+      description: t('features.avnu_gas.description'),
+      color: "from-cyan-500 to-cyan-700",
+      neural: true,
+    },
+    {
+      icon: TrendingUp,
+      title: t('features.security.title'),
+      description: t('features.security.description'),
+      color: "from-orange-500 to-orange-700",
+      neural: true,
+    },
+  ];
 
   return (
     <section ref={ref} className="py-32 bg-dark-950 relative overflow-hidden">
@@ -130,20 +132,16 @@ export function FeaturesSection() {
         >
           <div className="inline-flex items-center space-x-3 glass-card mb-6">
             <Network className="w-6 h-6 text-neural-400" />
-            <span className="text-sm font-medium text-dark-200">Starknet + ChipiPay Network</span>
+            <span className="text-sm font-medium text-dark-200">{t('features.network')}</span>
             <Sparkles className="w-4 h-4 text-neural-400 neural-pulse" />
           </div>
           
           <h2 className="text-5xl md:text-6xl font-bold text-dark-100 mb-8">
-            Starknet + ChipiPay que{" "}
-            <span className="neural-text">
-              protege familias
-            </span>
+            {t('features.title')}
           </h2>
           
           <p className="text-xl text-dark-300 max-w-4xl mx-auto leading-relaxed">
-            La primera plataforma de remesas construida en <span className="neural-text font-semibold">Starknet</span> que 
-            usa <span className="neural-text font-semibold">ChipiPay</span> para transacciones gasless y IA neural para protección familiar.
+            {t('features.subtitle')}
           </p>
         </motion.div>
 
@@ -234,28 +232,27 @@ export function FeaturesSection() {
           <div className="glass-card-dark rounded-3xl p-12 max-w-4xl mx-auto">
             <div className="flex items-center justify-center space-x-4 mb-8">
               <Brain className="w-8 h-8 text-neural-400 neural-pulse" />
-              <h3 className="text-2xl font-bold text-dark-100">Starknet + ChipiPay Network</h3>
+              <h3 className="text-2xl font-bold text-dark-100">{t('features.network_title')}</h3>
               <Network className="w-8 h-8 text-neural-400 neural-pulse" />
             </div>
             
             <p className="text-dark-300 mb-8 max-w-2xl mx-auto">
-              Nuestra red Starknet + ChipiPay procesa millones de transacciones gasless en tiempo real, 
-              con IA neural aprendiendo y adaptándose para proteger cada transferencia.
+              {t('features.network_description')}
             </p>
             
             {/* Neural Network Stats */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="glass-card text-center p-6">
                 <div className="text-3xl font-bold neural-text mb-2">99.7%</div>
-                <div className="text-sm text-dark-300">Precisión Starknet</div>
+                <div className="text-sm text-dark-300">{t('features.stats.precision')}</div>
               </div>
               <div className="glass-card text-center p-6">
                 <div className="text-3xl font-bold neural-text mb-2">0.3s</div>
-                <div className="text-sm text-dark-300">ChipiPay Speed</div>
+                <div className="text-sm text-dark-300">{t('features.stats.speed')}</div>
               </div>
               <div className="glass-card text-center p-6">
                 <div className="text-3xl font-bold neural-text mb-2">24/7</div>
-                <div className="text-sm text-dark-300">Starknet Security</div>
+                <div className="text-sm text-dark-300">{t('features.stats.security')}</div>
               </div>
             </div>
           </div>

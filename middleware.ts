@@ -1,9 +1,17 @@
-import { NextResponse } from "next/server";
+import createMiddleware from 'next-intl/middleware';
 
-export function middleware() {
-  return NextResponse.next();
-}
+export default createMiddleware({
+  // A list of all locales that are supported
+  locales: ['en', 'es-MX'],
+
+  // Used when no locale matches
+  defaultLocale: 'es-MX',
+
+  // Always use the default locale for the root path
+  localePrefix: 'as-needed'
+});
 
 export const config = {
-  matcher: ["/dashboard/:path*", "/send/:path*", "/family-vault/:path*"],
+  // Match only internationalized pathnames
+  matcher: ['/', '/(es-MX|en)/:path*', '/dashboard/:path*', '/send/:path*', '/family-vault/:path*']
 };

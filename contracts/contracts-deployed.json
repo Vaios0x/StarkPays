@@ -1,0 +1,23 @@
+{
+  "network": "sepolia",
+  "rpcUrl": "https://starknet-sepolia.public.blastapi.io",
+  "contracts": {
+    "PaymentProcessor": {
+      "address": "0x98fa98c393734",
+      "transactionHash": "0xed132003f841e"
+    },
+    "RemesaVault": {
+      "address": "0x25ee3ca00f7d5",
+      "transactionHash": "0xc2ad1414a0d98"
+    },
+    "TandaSavings": {
+      "address": "0xb64b62a21073",
+      "transactionHash": "0x89d10ffa6e862"
+    }
+  },
+  "tokens": {
+    "ETH": "0x049d36570d4e46f48e99674bd3fcc84644ddd6b96f7c7b7f7c7b7f7c7b7f7c7b"
+  },
+  "feeCollector": "0x0000000000000000000000000000000000000000000000000000000000000001",
+  "platformFeeBps": 50
+}

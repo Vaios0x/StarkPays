@@ -48,3 +48,5 @@ contracts/Scarb.lock
 
 # OS
 Thumbs.db
+
+.vercel

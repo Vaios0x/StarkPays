@@ -1,0 +1,324 @@
+{
+  "common": {
+    "send": "Send",
+    "receive": "Receive",
+    "free": "Free",
+    "instant": "Instant",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "back": "Back",
+    "next": "Next",
+    "done": "Done",
+    "user": "User"
+  },
+  "onboarding": {
+    "welcome": "Welcome to StarkPays",
+    "tagline": "Send money without fees with AI that protects your family",
+    "get_started": "Get Started",
+    "connect_wallet": "Connect Wallet",
+    "create_account": "Create Account"
+  },
+  "payments": {
+    "send_money": "Send Money",
+    "receive_money": "Receive Money",
+    "recipient": "Recipient",
+    "amount": "Amount",
+    "message": "Message",
+    "gas_free": "No gas fees",
+    "powered_by": "Powered by Chipi Pay",
+    "transaction_fee": "Transaction fee",
+    "total_cost": "Total cost",
+    "estimated_time": "Estimated time",
+    "confirm_transaction": "Confirm Transaction",
+    "transaction_success": "Transaction successful",
+    "transaction_failed": "Transaction failed"
+  },
+  "tandas": {
+    "title": "Neural Tandas",
+    "create_tanda": "Create Tanda",
+    "join_tanda": "Join Tanda",
+    "contribute": "Contribute",
+    "payout": "Payout",
+    "members": "Members",
+    "contribution_amount": "Contribution amount",
+    "frequency": "Frequency",
+    "max_members": "Max members",
+    "total_pool": "Total pool",
+    "next_contribution": "Next contribution",
+    "round": "Round",
+    "status": {
+      "active": "Active",
+      "completed": "Completed",
+      "cancelled": "Cancelled"
+    }
+  },
+  "ai": {
+    "protection": "AI Protection",
+    "fraud_detection": "Fraud detection",
+    "pattern_analysis": "Pattern analysis",
+    "trust_score": "Trust score",
+    "security_analysis": "Security analysis",
+    "risk_assessment": "Risk assessment",
+    "neural_guardian": "Neural Guardian",
+    "ai_active": "AI Active",
+    "threat_detected": "Threat detected",
+    "safe_transaction": "Safe transaction"
+  },
+  "wallet": {
+    "connect": "Connect",
+    "disconnect": "Disconnect",
+    "balance": "Balance",
+    "address": "Address",
+    "transactions": "Transactions",
+    "gasless": "Gasless",
+    "sponsored": "Sponsored",
+    "connect_neural": "Connect Neural",
+    "connect_wallet_aria": "Connect wallet with Argent X"
+  },
+  "navigation": {
+    "home": "Home",
+    "send": "Send",
+    "receive": "Receive",
+    "tandas": "Tandas",
+    "family_vault": "Family Vault",
+    "history": "History",
+    "settings": "Settings",
+    "my_account": "My Neural Account",
+    "dashboard": "Neural Dashboard",
+    "my_tandas": "My Tandas"
+  },
+  "errors": {
+    "wallet_not_connected": "Wallet not connected",
+    "insufficient_balance": "Insufficient balance",
+    "transaction_failed": "Transaction failed",
+    "network_error": "Network error",
+    "invalid_address": "Invalid address",
+    "amount_too_small": "Amount too small",
+    "amount_too_large": "Amount too large",
+    "tanda_full": "Tanda full",
+    "not_member": "Not a member",
+    "fraud_detected": "Fraud detected",
+    "transaction_blocked": "Transaction blocked for security",
+    "suspicious_pattern": "Suspicious pattern detected. Contact support.",
+    "security_analysis_error": "Security analysis error",
+    "send_error": "Error sending money",
+    "unknown_error": "Unknown error",
+    "generic_error": "Error",
+    "join_tanda_error": "Error joining tanda"
+  },
+  "success": {
+    "wallet_connected": "Wallet connected",
+    "transaction_sent": "Transaction sent",
+    "tanda_created": "Tanda created",
+    "joined_tanda": "Joined tanda",
+    "contribution_made": "Contribution made",
+    "payout_received": "Payout received",
+    "analysis_completed": "Analysis completed",
+    "money_sent": "Money sent successfully"
+  },
+  "notifications": {
+    "new_transaction": "New transaction",
+    "tanda_update": "Tanda update",
+    "security_alert": "Security alert",
+    "payment_received": "Payment received",
+    "contribution_due": "Contribution due"
+  },
+  "stats": {
+    "total_volume": "Total volume",
+    "total_transactions": "Total transactions",
+    "active_tandas": "Active tandas",
+    "members_online": "Members online",
+    "fraud_prevented": "Fraud prevented",
+    "money_saved": "Money saved"
+  },
+  "time": {
+    "now": "Now",
+    "minutes_ago": "{count} minutes ago",
+    "hours_ago": "{count} hours ago",
+    "days_ago": "{count} days ago",
+    "weeks_ago": "{count} weeks ago",
+    "months_ago": "{count} months ago"
+  },
+  "currency": {
+    "usd": "USD",
+    "mxn": "MXN",
+    "usdc": "USDC",
+    "usdt": "USDT"
+  },
+  "frequency": {
+    "daily": "Daily",
+    "weekly": "Weekly",
+    "biweekly": "Biweekly",
+    "monthly": "Monthly"
+  },
+  "hero": {
+    "title": "StarkPays Neural Network",
+    "subtitle": "The first remittance platform built on Starknet that uses ChipiPay for gasless transactions and neural AI for real-time family protection.",
+    "cta_primary": "Send with ChipiPay",
+    "cta_secondary": "View Starknet Demo",
+    "badge": "Powered by Starknet + ChipiPay",
+    "stats": {
+      "families_protected": "+10,000 families protected",
+      "rating": "⭐⭐⭐⭐⭐ 4.9/5 neural rating"
+    }
+  },
+  "features": {
+    "title": "Starknet + ChipiPay that protects families",
+    "subtitle": "The first remittance platform built on Starknet that uses ChipiPay for gasless transactions and neural AI for family protection.",
+    "network": "Starknet + ChipiPay Network",
+    "network_title": "Starknet + ChipiPay Network",
+    "network_description": "Our Starknet + ChipiPay network processes millions of gasless transactions in real-time, with neural AI learning and adapting to protect every transfer.",
+    "stats": {
+      "precision": "Starknet Precision",
+      "speed": "ChipiPay Speed",
+      "security": "Starknet Security"
+    },
+    "neural_guardian": {
+      "title": "Starknet Guardian AI",
+      "description": "Neural AI on Starknet that detects abnormal patterns and blocks fraud in real-time with 99.7% accuracy"
+    },
+    "smart_routing": {
+      "title": "ChipiPay Smart Routing",
+      "description": "ChipiPay + neural AI automatically chooses the cheapest and fastest route with 0% gas fees"
+    },
+    "privacy_shield": {
+      "title": "Starknet Privacy Shield",
+      "description": "Starknet ZK-proofs hide amounts but allow family verification with blockchain technology"
+    },
+    "family_vault": {
+      "title": "Starknet Family Vault",
+      "description": "The recipient can block withdrawals if they suspect extortion using Starknet smart contracts"
+    },
+    "zero_gas": {
+      "title": "ChipiPay Zero Gas Fees",
+      "description": "0% gas fees vs 3-5% from competitors thanks to ChipiPay and Starknet optimization"
+    },
+    "speed_transfer": {
+      "title": "Starknet Speed Transfer",
+      "description": "Money in Mexico in 5 minutes vs 3-5 days traditional using Starknet speed"
+    },
+    "neural_tandas": {
+      "title": "Neural Tandas",
+      "description": "Community savings circles protected by AI. No banking intermediaries, total transparency on blockchain"
+    },
+    "avnu_gas": {
+      "title": "AVNU Gas Strategy",
+      "description": "Sustainable gas model with AVNU Paymaster. First 10 txs free, then pay with USDC"
+    },
+    "security": {
+      "title": "OpenZeppelin Security",
+      "description": "Secure smart contracts with OpenZeppelin components. Ownable, Pausable, ReentrancyGuard"
+    }
+  },
+  "demo": {
+    "title": "Try StarkPays in Action",
+    "subtitle": "Experience the first remittance platform built on Starknet with ChipiPay. Gasless transactions, neural AI protection and real blockchain speed.",
+    "live_demo": "Live Demo",
+    "starknet_status": "Starknet Status",
+    "active": "ACTIVE",
+    "chipi_optimized": "ChipiPay Optimized",
+    "zero_gas_fees": "0% gas fees",
+    "ai_analyzing": "AI Analyzing",
+    "normal_pattern": "Normal pattern detected ✓",
+    "fraud_detected": "Fraud detected",
+    "blocked_by_starknet": "Blocked by Starknet ✓",
+    "stats": {
+      "precision": "Starknet Precision",
+      "speed": "ChipiPay Speed",
+      "security": "Starknet Security",
+      "users": "With ChipiPay"
+    }
+  },
+  "send": {
+    "title": "Send Neural Money",
+    "subtitle": "Protected by neural AI • 0.5% fee • Arrival in 5 minutes",
+    "neural_system": "Neural System Active",
+    "connect_wallet": "Connect your Wallet",
+    "connect_description": "You need to connect your wallet to send money",
+    "neural_data": "Neural Send Data",
+    "protected_by": "Protected by AI Guardian",
+    "recipient_placeholder": "0x... or email@example.com",
+    "amount_placeholder": "500",
+    "message_placeholder": "For rent...",
+    "neural_fee": "Neural fee:",
+    "total": "Total:",
+    "continue_with_ai": "Continue with AI",
+    "analyzing_security": "Analyzing neural security...",
+    "optimal_route": "Optimal Neural Route",
+    "ai_selected": "AI selected the best route",
+    "chipi_starknet": "ChipiPay Neural + Starknet",
+    "fastest_cheapest": "Fastest and cheapest",
+    "estimated_time": "5 min",
+    "fee": "$0.02 fee",
+    "alternative_routes": "Alternative routes:",
+    "ai_guardian": "AI Guardian: Safe transaction",
+    "security_score": "Security score: {score}/100",
+    "confirm_neural": "Confirm Neural Send",
+    "sending": "Sending...",
+    "neural_confirmed": "Neural Send Confirmed!",
+    "family_receive": "Your family will receive ${amount} in ~5 minutes",
+    "transaction_id": "Neural Transaction ID",
+    "estimated_time_label": "Estimated time",
+    "neural_fee_label": "Neural fee",
+    "ai_security": "AI Security",
+    "send_another": "Send Another"
+  },
+  "tandas_page": {
+    "title": "Neural Tandas",
+    "subtitle": "Community savings protected by AI • Trust circles • No intermediaries",
+    "neural_active": "Active Neural Tandas",
+    "connect_wallet": "Connect your Wallet",
+    "connect_description": "You need to connect your wallet to create or join tandas",
+    "create_new": "Create New Neural Tanda",
+    "stats": {
+      "active_tandas": "Active Tandas",
+      "total_saved": "Total Saved",
+      "success_rate": "Success Rate",
+      "fraud_detected": "Fraud Detected"
+    },
+    "tanda": {
+      "join": "Join Tanda",
+      "full": "Tanda Full",
+      "view_details": "View Details",
+      "progress": "Progress",
+      "next_contribution": "Next contribution:",
+      "total_pool": "Total pool:",
+      "contribution": "Contribution",
+      "members": "Members"
+    }
+  },
+  "footer": {
+    "description": "The first remittance platform with Neural Artificial Intelligence that protects families with advanced blockchain technology.",
+    "neural_product": "Neural Product",
+    "company": "Company",
+    "legal_neural": "Legal Neural",
+    "neural_support": "Neural Support",
+    "neural_guardian": "Neural Guardian AI",
+    "smart_routing": "Smart Routing",
+    "family_vault": "Family Vault",
+    "api_neural": "Neural API",
+    "about": "About StarkPays",
+    "blog": "Neural Blog",
+    "careers": "Careers",
+    "press": "Press",
+    "terms": "Neural Terms",
+    "privacy": "ZK Privacy",
+    "cookies": "Cookies",
+    "compliance": "Compliance",
+    "help": "Neural Center",
+    "status": "System Status",
+    "contact": "Contact",
+    "report_fraud": "Report Fraud",
+    "neural_stats": {
+      "precision": "Neural Precision",
+      "monitoring": "AI Monitoring",
+      "analysis": "Neural Analysis",
+      "families": "Protected Families"
+    },
+    "copyright": "© 2025 StarkPays Neural. All rights reserved.",
+    "made_by": "Made by"
+  }
+}

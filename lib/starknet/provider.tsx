@@ -4,6 +4,7 @@ import { ReactNode, createContext, useContext, useState, useEffect } from "react
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { StarknetConfig, InjectedConnector } from "@starknet-react/core";
 import { sepolia, mainnet } from "@starknet-react/chains";
+import { RpcProvider } from "starknet";
 import { toast } from "sonner";
 
 interface StarknetContextType {
@@ -90,7 +91,40 @@ export function StarknetProvider({ children }: { children: ReactNode }) {
     new InjectedConnector({ options: { id: "braavos", name: "Braavos" } }),
   ];
 
-  const chains = [sepolia, mainnet];
+  const provider = (chain: any) => new RpcProvider({
+    nodeUrl: chain.id === sepolia.id
+      ? "https://starknet-sepolia.public.blastapi.io"
+      : "https://starknet-mainnet.public.blastapi.io"
+  });
+
+  const chains = [
+    {
+      ...sepolia,
+      paymasterRpcUrls: {
+        "0x1": {
+          http: ["https://starknet-sepolia.public.blastapi.io"],
+          webSocket: ["wss://starknet-sepolia.public.blastapi.io"]
+        },
+        "0x2": {
+          http: ["https://starknet-sepolia.public.blastapi.io"],
+          webSocket: ["wss://starknet-sepolia.public.blastapi.io"]
+        }
+      }
+    },
+    {
+      ...mainnet,
+      paymasterRpcUrls: {
+        "0x1": {
+          http: ["https://starknet-mainnet.public.blastapi.io"],
+          webSocket: ["wss://starknet-mainnet.public.blastapi.io"]
+        },
+        "0x2": {
+          http: ["https://starknet-mainnet.public.blastapi.io"],
+          webSocket: ["wss://starknet-mainnet.public.blastapi.io"]
+        }
+      }
+    }
+  ];
 
   return (
     <StarknetContext.Provider 
@@ -107,6 +141,7 @@ export function StarknetProvider({ children }: { children: ReactNode }) {
         <StarknetConfig
           chains={chains}
           connectors={connectors}
+          provider={provider}
           autoConnect
         >
           {children}

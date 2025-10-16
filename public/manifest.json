@@ -9,30 +9,10 @@
   "orientation": "portrait",
   "icons": [
     {
-      "src": "/icons/icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png",
+      "src": "/icons/icon-base.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
       "purpose": "any maskable"
-    },
-    {
-      "src": "/icons/icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "any maskable"
-    }
-  ],
-  "screenshots": [
-    {
-      "src": "/screenshots/home.png",
-      "sizes": "1280x720",
-      "type": "image/png",
-      "form_factor": "wide"
-    },
-    {
-      "src": "/screenshots/mobile.png",
-      "sizes": "750x1334",
-      "type": "image/png",
-      "form_factor": "narrow"
     }
   ],
   "categories": ["finance", "utilities"],
@@ -42,20 +22,20 @@
       "short_name": "Enviar",
       "description": "Enviar dinero rápido",
       "url": "/send",
-      "icons": [{ "src": "/icons/icon-send.png", "sizes": "96x96" }]
+      "icons": [{ "src": "/icons/icon-base.svg", "sizes": "96x96" }]
     },
     {
       "name": "Recibir Dinero",
       "short_name": "Recibir",
       "description": "Recibir pagos",
       "url": "/receive",
-      "icons": [{ "src": "/icons/icon-receive.png", "sizes": "96x96" }]
+      "icons": [{ "src": "/icons/icon-base.svg", "sizes": "96x96" }]
     },
     {
       "name": "Bóveda Familiar",
       "short_name": "Bóveda",
       "url": "/family-vault",
-      "icons": [{ "src": "/icons/icon-vault.png", "sizes": "96x96" }]
+      "icons": [{ "src": "/icons/icon-base.svg", "sizes": "96x96" }]
     }
   ]
 }
