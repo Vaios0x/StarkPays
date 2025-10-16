@@ -23,7 +23,7 @@
 <div align="center">
 
 ### 🚀 **Live Demo**
-[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-FF6B35?style=for-the-badge&logo=vercel&logoColor=white)](https://starkpays-demo.vercel.app)
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-FF6B35?style=for-the-badge&logo=vercel&logoColor=white)](https://starkpays-app.vercel.app/)
 [![Documentation](https://img.shields.io/badge/📚_Documentation-4285F4?style=for-the-badge&logo=gitbook&logoColor=white)](https://docs.starkpays.com)
 [![Starkscan](https://img.shields.io/badge/🔍_View_on_Starkscan-FF0420?style=for-the-badge&logo=starknet&logoColor=white)](https://sepolia.starkscan.co/)
 
