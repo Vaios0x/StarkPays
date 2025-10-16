@@ -1,0 +1,40 @@
+{
+  "name": "starkpays-contracts",
+  "version": "1.0.0",
+  "description": "Contratos inteligentes para Starkpays - Sistema de pagos, remesas y tandas",
+  "main": "index.js",
+  "scripts": {
+    "build": "scarb build",
+    "test": "snforge test",
+    "test:coverage": "snforge test --coverage",
+    "deploy": "tsx deploy-optimized.ts",
+    "deploy:working": "tsx deploy-working.ts",
+    "deploy:simple": "tsx deploy-simple.ts",
+    "clean": "scarb clean",
+    "format": "scarb fmt",
+    "check": "scarb check"
+  },
+  "keywords": [
+    "starknet",
+    "cairo",
+    "defi",
+    "payments",
+    "remittances",
+    "tandas"
+  ],
+  "author": "Starkpays Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@types/node-fetch": "^2.6.13",
+    "node-fetch": "^3.3.2",
+    "starknet": "^6.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

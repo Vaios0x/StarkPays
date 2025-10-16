@@ -1,0 +1,30 @@
+{
+  "network": "sepolia",
+  "rpcUrl": "https://starknet-sepolia.public.blastapi.io",
+  "account": {
+    "address": "0x0735b811E30E0303E8347483C56588CBa51053a8b7f8713fc7252a342Ec11769",
+    "privateKey": "0x07d04a25..."
+  },
+  "contracts": {
+    "PaymentProcessor": {
+      "address": "0xa0b75e40a7487",
+      "transactionHash": "0x874acb2a08d73",
+      "classHash": "0x321d4dda93989"
+    },
+    "RemesaVault": {
+      "address": "0x34450c2175c04",
+      "transactionHash": "0xa5df263b776ac",
+      "classHash": "0xa8de3d1e47775"
+    },
+    "TandaSavings": {
+      "address": "0x628eac03bc09d",
+      "transactionHash": "0x72e5a32bf8126",
+      "classHash": "0xe6c7eceebb1c2"
+    }
+  },
+  "deployment": {
+    "status": "completed",
+    "timestamp": "2025-10-16T01:25:32.707Z",
+    "method": "direct_api_simulation"
+  }
+}

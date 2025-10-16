@@ -1,0 +1,324 @@
+{
+  "common": {
+    "send": "Enviar",
+    "receive": "Recibir",
+    "free": "Gratis",
+    "instant": "Instantáneo",
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito",
+    "cancel": "Cancelar",
+    "confirm": "Confirmar",
+    "back": "Volver",
+    "next": "Siguiente",
+    "done": "Listo",
+    "user": "Usuario"
+  },
+  "onboarding": {
+    "welcome": "Bienvenido a StarkPays",
+    "tagline": "Envía dinero sin comisiones con IA que protege a tu familia",
+    "get_started": "Comenzar",
+    "connect_wallet": "Conectar Wallet",
+    "create_account": "Crear Cuenta"
+  },
+  "payments": {
+    "send_money": "Enviar Dinero",
+    "receive_money": "Recibir Dinero",
+    "recipient": "Destinatario",
+    "amount": "Cantidad",
+    "message": "Mensaje",
+    "gas_free": "Sin comisiones de gas",
+    "powered_by": "Patrocinado por Chipi Pay",
+    "transaction_fee": "Comisión de transacción",
+    "total_cost": "Costo total",
+    "estimated_time": "Tiempo estimado",
+    "confirm_transaction": "Confirmar Transacción",
+    "transaction_success": "Transacción exitosa",
+    "transaction_failed": "Transacción falló"
+  },
+  "tandas": {
+    "title": "Tandas Neurales",
+    "create_tanda": "Crear Tanda",
+    "join_tanda": "Unirse a Tanda",
+    "contribute": "Contribuir",
+    "payout": "Pago",
+    "members": "Miembros",
+    "contribution_amount": "Monto de contribución",
+    "frequency": "Frecuencia",
+    "max_members": "Máximo de miembros",
+    "total_pool": "Total del pool",
+    "next_contribution": "Próxima contribución",
+    "round": "Ronda",
+    "status": {
+      "active": "Activa",
+      "completed": "Completada",
+      "cancelled": "Cancelada"
+    }
+  },
+  "ai": {
+    "protection": "Protección IA",
+    "fraud_detection": "Detección de fraudes",
+    "pattern_analysis": "Análisis de patrones",
+    "trust_score": "Score de confianza",
+    "security_analysis": "Análisis de seguridad",
+    "risk_assessment": "Evaluación de riesgo",
+    "neural_guardian": "Guardian Neural",
+    "ai_active": "IA Activa",
+    "threat_detected": "Amenaza detectada",
+    "safe_transaction": "Transacción segura"
+  },
+  "wallet": {
+    "connect": "Conectar",
+    "disconnect": "Desconectar",
+    "balance": "Balance",
+    "address": "Dirección",
+    "transactions": "Transacciones",
+    "gasless": "Sin gas",
+    "sponsored": "Patrocinado",
+    "connect_neural": "Conectar Neural",
+    "connect_wallet_aria": "Conectar wallet con Argent X"
+  },
+  "navigation": {
+    "home": "Inicio",
+    "send": "Enviar",
+    "receive": "Recibir",
+    "tandas": "Tandas",
+    "family_vault": "Bóveda Familiar",
+    "history": "Historial",
+    "settings": "Configuración",
+    "my_account": "Mi Cuenta Neural",
+    "dashboard": "Dashboard Neural",
+    "my_tandas": "Mis Tandas"
+  },
+  "errors": {
+    "wallet_not_connected": "Wallet no conectada",
+    "insufficient_balance": "Balance insuficiente",
+    "transaction_failed": "Transacción falló",
+    "network_error": "Error de red",
+    "invalid_address": "Dirección inválida",
+    "amount_too_small": "Monto muy pequeño",
+    "amount_too_large": "Monto muy grande",
+    "tanda_full": "Tanda llena",
+    "not_member": "No eres miembro",
+    "fraud_detected": "Fraude detectado",
+    "transaction_blocked": "Transacción bloqueada por seguridad",
+    "suspicious_pattern": "Patrón sospechoso detectado. Contacta soporte.",
+    "security_analysis_error": "Error en análisis de seguridad",
+    "send_error": "Error enviando dinero",
+    "unknown_error": "Error desconocido",
+    "generic_error": "Error",
+    "join_tanda_error": "Error uniéndote a la tanda"
+  },
+  "success": {
+    "wallet_connected": "Wallet conectada",
+    "transaction_sent": "Transacción enviada",
+    "tanda_created": "Tanda creada",
+    "joined_tanda": "Te uniste a la tanda",
+    "contribution_made": "Contribución realizada",
+    "payout_received": "Pago recibido",
+    "analysis_completed": "Análisis completado",
+    "money_sent": "Dinero enviado exitosamente"
+  },
+  "notifications": {
+    "new_transaction": "Nueva transacción",
+    "tanda_update": "Actualización de tanda",
+    "security_alert": "Alerta de seguridad",
+    "payment_received": "Pago recibido",
+    "contribution_due": "Contribución pendiente"
+  },
+  "stats": {
+    "total_volume": "Volumen total",
+    "total_transactions": "Total de transacciones",
+    "active_tandas": "Tandas activas",
+    "members_online": "Miembros en línea",
+    "fraud_prevented": "Fraudes prevenidos",
+    "money_saved": "Dinero ahorrado"
+  },
+  "time": {
+    "now": "Ahora",
+    "minutes_ago": "hace {count} minutos",
+    "hours_ago": "hace {count} horas",
+    "days_ago": "hace {count} días",
+    "weeks_ago": "hace {count} semanas",
+    "months_ago": "hace {count} meses"
+  },
+  "currency": {
+    "usd": "USD",
+    "mxn": "MXN",
+    "usdc": "USDC",
+    "usdt": "USDT"
+  },
+  "frequency": {
+    "daily": "Diario",
+    "weekly": "Semanal",
+    "biweekly": "Quincenal",
+    "monthly": "Mensual"
+  },
+  "hero": {
+    "title": "StarkPays Red Neural",
+    "subtitle": "La primera plataforma de remesas construida en Starknet que usa ChipiPay para transacciones gasless e IA neural para protección familiar en tiempo real.",
+    "cta_primary": "Enviar con ChipiPay",
+    "cta_secondary": "Ver Demo Starknet",
+    "badge": "Powered by Starknet + ChipiPay",
+    "stats": {
+      "families_protected": "+10,000 familias protegidas",
+      "rating": "⭐⭐⭐⭐⭐ 4.9/5 rating neural"
+    }
+  },
+  "features": {
+    "title": "Starknet + ChipiPay que protege familias",
+    "subtitle": "La primera plataforma de remesas construida en Starknet que usa ChipiPay para transacciones gasless e IA neural para protección familiar.",
+    "network": "Starknet + ChipiPay Network",
+    "network_title": "Starknet + ChipiPay Network",
+    "network_description": "Nuestra red Starknet + ChipiPay procesa millones de transacciones gasless en tiempo real, con IA neural aprendiendo y adaptándose para proteger cada transferencia.",
+    "stats": {
+      "precision": "Precisión Starknet",
+      "speed": "Velocidad ChipiPay",
+      "security": "Seguridad Starknet"
+    },
+    "neural_guardian": {
+      "title": "Starknet Guardian AI",
+      "description": "IA neural en Starknet que detecta patrones anormales y bloquea fraudes en tiempo real con 99.7% de precisión"
+    },
+    "smart_routing": {
+      "title": "ChipiPay Smart Routing",
+      "description": "ChipiPay + IA neural elige automáticamente la ruta más barata y rápida con 0% gas fees"
+    },
+    "privacy_shield": {
+      "title": "Starknet Privacy Shield",
+      "description": "ZK-proofs de Starknet ocultan montos pero permiten verificación familiar con tecnología blockchain"
+    },
+    "family_vault": {
+      "title": "Starknet Family Vault",
+      "description": "El receptor puede bloquear retiros si sospecha extorsión usando contratos inteligentes de Starknet"
+    },
+    "zero_gas": {
+      "title": "ChipiPay Zero Gas Fees",
+      "description": "0% gas fees vs 3-5% de competidores gracias a ChipiPay y optimización de Starknet"
+    },
+    "speed_transfer": {
+      "title": "Starknet Speed Transfer",
+      "description": "Dinero en México en 5 minutos vs 3-5 días tradicional usando la velocidad de Starknet"
+    },
+    "neural_tandas": {
+      "title": "Tandas Neurales",
+      "description": "Círculos de ahorro comunitario protegidos por IA. Sin intermediarios bancarios, transparencia total en blockchain"
+    },
+    "avnu_gas": {
+      "title": "AVNU Gas Strategy",
+      "description": "Modelo de gas sostenible con AVNU Paymaster. Primeras 10 txs gratis, después pagar con USDC"
+    },
+    "security": {
+      "title": "OpenZeppelin Security",
+      "description": "Contratos inteligentes seguros con componentes OpenZeppelin. Ownable, Pausable, ReentrancyGuard"
+    }
+  },
+  "demo": {
+    "title": "Prueba StarkPays en Acción",
+    "subtitle": "Experimenta la primera plataforma de remesas construida en Starknet con ChipiPay. Transacciones gasless, IA neural de protección y velocidad blockchain real.",
+    "live_demo": "Demo en Vivo",
+    "starknet_status": "Estado Starknet",
+    "active": "ACTIVO",
+    "chipi_optimized": "ChipiPay Optimizado",
+    "zero_gas_fees": "0% gas fees",
+    "ai_analyzing": "IA Analizando",
+    "normal_pattern": "Patrón normal detectado ✓",
+    "fraud_detected": "Fraude detectado",
+    "blocked_by_starknet": "Bloqueado por Starknet ✓",
+    "stats": {
+      "precision": "Precisión Starknet",
+      "speed": "Velocidad ChipiPay",
+      "security": "Seguridad Starknet",
+      "users": "Con ChipiPay"
+    }
+  },
+  "send": {
+    "title": "Enviar Dinero Neural",
+    "subtitle": "Protegido por IA neural • Comisión 0.5% • Llegada en 5 minutos",
+    "neural_system": "Sistema Neural Activo",
+    "connect_wallet": "Conecta tu Wallet",
+    "connect_description": "Necesitas conectar tu wallet para enviar dinero",
+    "neural_data": "Datos de Envío Neural",
+    "protected_by": "Protegido por IA Guardian",
+    "recipient_placeholder": "0x... o email@ejemplo.com",
+    "amount_placeholder": "500",
+    "message_placeholder": "Para la renta...",
+    "neural_fee": "Comisión Neural:",
+    "total": "Total:",
+    "continue_with_ai": "Continuar con IA",
+    "analyzing_security": "Analizando seguridad neural...",
+    "optimal_route": "Ruta Neural Óptima",
+    "ai_selected": "IA seleccionó la mejor ruta",
+    "chipi_starknet": "ChipiPay Neural + Starknet",
+    "fastest_cheapest": "Más rápido y económico",
+    "estimated_time": "5 min",
+    "fee": "$0.02 fee",
+    "alternative_routes": "Rutas Alternativas:",
+    "ai_guardian": "IA Guardian: Transacción segura",
+    "security_score": "Score de seguridad: {score}/100",
+    "confirm_neural": "Confirmar Envío Neural",
+    "sending": "Enviando...",
+    "neural_confirmed": "¡Envío Neural Confirmado!",
+    "family_receive": "Tu familia recibirá ${amount} en ~5 minutos",
+    "transaction_id": "ID de Transacción Neural",
+    "estimated_time_label": "Tiempo estimado",
+    "neural_fee_label": "Fee neural",
+    "ai_security": "Seguridad IA",
+    "send_another": "Enviar Otro"
+  },
+  "tandas_page": {
+    "title": "Tandas Neurales",
+    "subtitle": "Ahorro comunitario protegido por IA • Círculos de confianza • Sin intermediarios",
+    "neural_active": "Tandas Neurales Activas",
+    "connect_wallet": "Conecta tu Wallet",
+    "connect_description": "Necesitas conectar tu wallet para crear o unirte a tandas",
+    "create_new": "Crear Nueva Tanda Neural",
+    "stats": {
+      "active_tandas": "Tandas Activas",
+      "total_saved": "Total Ahorrado",
+      "success_rate": "Tasa de Éxito",
+      "fraud_detected": "Fraudes Detectados"
+    },
+    "tanda": {
+      "join": "Unirse a la Tanda",
+      "full": "Tanda Completa",
+      "view_details": "Ver Detalles",
+      "progress": "Progreso",
+      "next_contribution": "Próxima contribución:",
+      "total_pool": "Total del pool:",
+      "contribution": "Contribución",
+      "members": "Miembros"
+    }
+  },
+  "footer": {
+    "description": "La primera plataforma de remesas con Inteligencia Artificial Neural que protege familias con tecnología blockchain avanzada.",
+    "neural_product": "Producto Neural",
+    "company": "Empresa",
+    "legal_neural": "Legal Neural",
+    "neural_support": "Soporte Neural",
+    "neural_guardian": "Neural Guardian AI",
+    "smart_routing": "Smart Routing",
+    "family_vault": "Family Vault",
+    "api_neural": "API Neural",
+    "about": "Sobre StarkPays",
+    "blog": "Blog Neural",
+    "careers": "Carreras",
+    "press": "Prensa",
+    "terms": "Términos Neural",
+    "privacy": "Privacidad ZK",
+    "cookies": "Cookies",
+    "compliance": "Cumplimiento",
+    "help": "Centro Neural",
+    "status": "Estado del Sistema",
+    "contact": "Contacto",
+    "report_fraud": "Reportar Fraude",
+    "neural_stats": {
+      "precision": "Precisión Neural",
+      "monitoring": "Monitoreo IA",
+      "analysis": "Análisis Neural",
+      "families": "Familias Protegidas"
+    },
+    "copyright": "© 2025 StarkPays Neural. Todos los derechos reservados.",
+    "made_by": "Hecho por"
+  }
+}
