@@ -1,0 +1,8 @@
+[profile.sepolia]
+rpc_url = "https://starknet-sepolia.public.blastapi.io"
+account = "argentx_account"
+private_key = "0x07d04a25d64c2f31722427d424a4e5b514e970fcbb2152ebacdfc391ffcaa892"
+
+[account.argentx_account]
+address = "0x0735b811E30E0303E8347483C56588CBa51053a8b7f8713fc7252a342Ec11769"
+private_key = "0x07d04a25d64c2f31722427d424a4e5b514e970fcbb2152ebacdfc391ffcaa892"

@@ -1,17 +1,19 @@
 [package]
 name = "starkpays_contracts"
 version = "0.1.0"
-edition = "2023_11"
+edition = "2024_07"
 
 [dependencies]
-starknet = ">=2.6.0"
-openzeppelin = { git = "https://github.com/OpenZeppelin/cairo-contracts.git", tag = "v1.0.0" }
+starknet = ">=2.3.0"
 
 [[target.starknet-contract]]
 sierra = true
 casm = true
 
-[scripts]
-test = "snforge test"
-build = "scarb build"
-test-unit = "snforge test --package starkpays_contracts"
+[profile.dev]
+opt-level = 3
+overflow-checks = true
+
+[profile.release]
+opt-level = 3
+overflow-checks = true

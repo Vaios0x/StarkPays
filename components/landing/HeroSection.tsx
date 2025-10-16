@@ -4,10 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, Shield, Zap, DollarSign, Brain, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { useTranslations } from "next-intl";
-
 export function HeroSection() {
-  const t = useTranslations();
   
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 neural-mesh-bg">
@@ -132,7 +129,7 @@ export function HeroSection() {
               <div className="w-8 h-8 bg-neural-gradient rounded-full flex items-center justify-center neural-glow">
                 <Brain className="w-4 h-4 text-white" />
               </div>
-              <span className="text-sm font-medium text-dark-100">{t('hero.badge')}</span>
+              <span className="text-sm font-medium text-dark-100">Nuevo: IA Neural en Starknet</span>
               <Sparkles className="w-4 h-4 text-neural-400 neural-pulse" />
             </motion.div>
 
@@ -143,7 +140,7 @@ export function HeroSection() {
                   StarkPays
                 </span>
                 <span className="text-dark-100 block">
-                  {t('hero.title')}
+                  Envía Dinero Sin Comisiones con IA que Protege a tu Familia
                 </span>
               </h1>
               
@@ -152,7 +149,7 @@ export function HeroSection() {
 
             {/* Starknet + ChipiPay Subheadline */}
             <p className="text-xl text-dark-300 max-w-2xl leading-relaxed">
-              {t('hero.subtitle')}
+              La primera plataforma de remesas construida en Starknet con IA neural. Transacciones gasless, detección de fraudes en tiempo real y protección familiar.
             </p>
 
             {/* Neural Stats Pills */}
@@ -163,7 +160,7 @@ export function HeroSection() {
               >
                 <div className="flex items-center space-x-3">
                   <DollarSign className="w-5 h-5 text-neural-400" />
-                  <span className="text-sm font-semibold text-dark-100">{t('payments.gas_free')}</span>
+                  <span className="text-sm font-semibold text-dark-100">0% Gas Fees</span>
                 </div>
               </motion.div>
               
@@ -174,7 +171,7 @@ export function HeroSection() {
               >
                 <div className="flex items-center space-x-3">
                   <Zap className="w-5 h-5 text-neural-400" />
-                  <span className="text-sm font-semibold text-dark-100">{t('payments.instant')}</span>
+                  <span className="text-sm font-semibold text-dark-100">Instantáneo</span>
                 </div>
               </motion.div>
               
@@ -185,7 +182,7 @@ export function HeroSection() {
               >
                 <div className="flex items-center space-x-3">
                   <Shield className="w-5 h-5 text-neural-400" />
-                  <span className="text-sm font-semibold text-dark-100">{t('ai.protection')}</span>
+                  <span className="text-sm font-semibold text-dark-100">Protección IA</span>
                 </div>
               </motion.div>
             </div>
@@ -202,7 +199,7 @@ export function HeroSection() {
                     className="neural-button group text-lg px-8 py-4 h-auto"
                   >
                     <span className="flex items-center">
-                      {t('hero.cta_primary')}
+                      Probar StarkPays Gratis
                       <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                     </span>
                   </Button>
@@ -218,7 +215,7 @@ export function HeroSection() {
                   variant="outline"
                   className="glass-button text-lg px-8 py-4 h-auto border-neural-500 text-neural-400 hover:bg-neural-500 hover:text-white"
                 >
-                  {t('hero.cta_secondary')}
+                  Ver Demo en Vivo
                 </Button>
               </motion.div>
             </div>
@@ -242,8 +239,8 @@ export function HeroSection() {
                 ))}
               </div>
               <div>
-                <p className="text-sm font-semibold text-dark-100">{t('hero.stats.families_protected')}</p>
-                <p className="text-xs text-dark-400">{t('hero.stats.rating')}</p>
+                <p className="text-sm font-semibold text-dark-100">10,000+ Familias Protegidas</p>
+                <p className="text-xs text-dark-400">4.9/5 Estrellas</p>
               </div>
             </div>
           </motion.div>

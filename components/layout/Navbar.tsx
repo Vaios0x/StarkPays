@@ -20,14 +20,11 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { WalletConnectModal } from "@/components/wallet/WalletConnectModal";
 import { useWalletWithAuth } from "@/features/wallet/hooks/use-wallet-with-auth";
-import { useTranslations } from "next-intl";
-import { LanguageSwitcher } from "@/components/ui/LanguageSwitcher";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [isWalletModalOpen, setIsWalletModalOpen] = useState(false);
-  const t = useTranslations();
   
   const { 
     wallet, 
@@ -46,13 +43,13 @@ export function Navbar() {
   }, []);
 
 const navItems = [
-  { name: t('navigation.send'), href: "/send", icon: Zap },
-  { name: t('navigation.receive'), href: "/receive", icon: Wallet },
-  { name: t('navigation.tandas'), href: "/tandas", icon: Users },
+  { name: "Enviar", href: "/send", icon: Zap },
+  { name: "Recibir", href: "/receive", icon: Wallet },
+  { name: "Tandas", href: "/tandas", icon: Users },
   { name: "Bitcoin", href: "/bitcoin", icon: Bitcoin },
   { name: "Privacidad", href: "/privacy", icon: Shield },
   { name: "Gaming", href: "/gaming", icon: Trophy },
-  { name: t('navigation.history'), href: "/historial", icon: BarChart3 },
+  { name: "Historial", href: "/historial", icon: BarChart3 },
 ];
 
   return (
@@ -84,7 +81,7 @@ const navItems = [
             </span>
             <Badge className="hidden sm:inline-flex bg-neural-gradient text-white border-0">
               <Sparkles className="w-3 h-3 mr-1 neural-pulse" />
-              {t('ai.neural_guardian')}
+              Guardián Neural
             </Badge>
           </Link>
 
@@ -111,8 +108,6 @@ const navItems = [
 
           {/* Wallet Connect + User Menu */}
           <div className="hidden lg:flex items-center space-x-4">
-            {/* Language Switcher */}
-            <LanguageSwitcher />
             
             {isConnected ? (
               <>
@@ -136,36 +131,36 @@ const navItems = [
                         </span>
                       </div>
                       <span className="font-mono text-sm">
-                        {wallet?.address ? `${wallet.address.slice(0, 6)}...${wallet.address.slice(-4)}` : t('common.user')}
+                        {wallet?.address ? `${wallet.address.slice(0, 6)}...${wallet.address.slice(-4)}` : "Usuario"}
                       </span>
                       <ChevronDown className="w-4 h-4 opacity-50" />
                     </Button>
                   </DropdownMenuTrigger>
                   <DropdownMenuContent align="end" className="w-56 glass-card-dark border-dark-800">
-                    <DropdownMenuLabel className="text-dark-100">{t('navigation.my_account')}</DropdownMenuLabel>
+                    <DropdownMenuLabel className="text-dark-100">Mi Cuenta</DropdownMenuLabel>
                     <DropdownMenuSeparator className="bg-dark-700" />
                     <DropdownMenuItem asChild className="text-dark-200 hover:text-neural-400 hover:bg-glass-white">
                       <Link href="/dashboard">
                         <BarChart3 className="w-4 h-4 mr-2" />
-                        {t('navigation.dashboard')}
+                        Dashboard
                       </Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild className="text-dark-200 hover:text-neural-400 hover:bg-glass-white">
                       <Link href="/tandas">
                         <Users className="w-4 h-4 mr-2" />
-                        {t('navigation.my_tandas')}
+                        Mis Tandas
                       </Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild className="text-dark-200 hover:text-neural-400 hover:bg-glass-white">
                       <Link href="/family-vault">
                         <Shield className="w-4 h-4 mr-2" />
-                        {t('navigation.family_vault')}
+                        Bóveda Familiar
                       </Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem asChild className="text-dark-200 hover:text-neural-400 hover:bg-glass-white">
                       <Link href="/settings">
                         <Settings className="w-4 h-4 mr-2" />
-                        {t('navigation.settings')}
+                        Configuración
                       </Link>
                     </DropdownMenuItem>
                     <DropdownMenuSeparator className="bg-dark-700" />
@@ -174,7 +169,7 @@ const navItems = [
                       className="text-red-400 focus:text-red-400 hover:bg-glass-white"
                     >
                       <LogOut className="w-4 h-4 mr-2" />
-                      {t('wallet.disconnect')}
+                      Desconectar
                     </DropdownMenuItem>
                   </DropdownMenuContent>
                 </DropdownMenu>
@@ -186,17 +181,17 @@ const navItems = [
                 className="neural-button"
                 disabled={isLoading}
                 tabIndex={0}
-                aria-label={t('wallet.connect_wallet_aria')}
+                aria-label="Conectar billetera"
               >
                 {isLoading ? (
                   <>
                     <div className="animate-spin w-5 h-5 border-2 border-white border-t-transparent rounded-full mr-2" />
-                    {t('common.loading')}
+                    Cargando...
                   </>
                 ) : (
                   <>
                     <Wallet className="w-5 h-5 mr-2" />
-                    {t('wallet.connect_neural')}
+                    Conectar Neural
                   </>
                 )}
               </Button>
@@ -238,10 +233,6 @@ const navItems = [
                 </Link>
               ))}
               
-              {/* Language Switcher for Mobile */}
-              <div className="mb-4">
-                <LanguageSwitcher />
-              </div>
               
               {!isConnected && (
                 <Button
@@ -252,17 +243,17 @@ const navItems = [
                   className="w-full neural-button"
                   disabled={isLoading}
                   tabIndex={0}
-                  aria-label={t('wallet.connect_wallet_aria')}
+                  aria-label="Conectar billetera"
                 >
                   {isLoading ? (
                     <>
                       <div className="animate-spin w-5 h-5 border-2 border-white border-t-transparent rounded-full mr-2" />
-                      {t('common.loading')}
+                      Cargando...
                     </>
                   ) : (
                     <>
                       <Wallet className="w-5 h-5 mr-2" />
-                      {t('wallet.connect_neural')}
+                      Conectar Neural
                     </>
                   )}
                 </Button>

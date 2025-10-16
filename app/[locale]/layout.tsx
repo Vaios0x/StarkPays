@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
 import "../globals.css";
 import { Toaster } from "@/components/ui/sonner";
@@ -28,13 +28,19 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],
   },
   manifest: "/manifest.json",
-  themeColor: "#0ea5e9",
-  viewport: "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
     title: "StarkPays",
   },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+  themeColor: "#0ea5e9",
 };
 
 export default async function LocaleLayout({

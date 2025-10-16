@@ -5,10 +5,6 @@ const withPWA = require('next-pwa')({
   disable: process.env.NODE_ENV === 'development',
 });
 
-const withNextIntl = require('next-intl/plugin')(
-  './i18n.ts'
-);
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
@@ -18,6 +14,7 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  serverExternalPackages: ['@starknet/core', '@starknet/contracts'],
   webpack: (config, { isServer }) => {
     if (!isServer) {
       config.resolve.fallback = {
@@ -32,4 +29,4 @@ const nextConfig = {
   },
 };
 
-module.exports = withNextIntl(withPWA(nextConfig));
+module.exports = withPWA(nextConfig);

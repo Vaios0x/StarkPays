@@ -7,7 +7,9 @@
     "build": "scarb build",
     "test": "snforge test",
     "test:coverage": "snforge test --coverage",
-    "deploy": "tsx scripts/deploy_contracts.ts",
+    "deploy": "tsx deploy-optimized.ts",
+    "deploy:working": "tsx deploy-working.ts",
+    "deploy:simple": "tsx deploy-simple.ts",
     "clean": "scarb clean",
     "format": "scarb fmt",
     "check": "scarb check"
@@ -28,6 +30,8 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
+    "@types/node-fetch": "^2.6.13",
+    "node-fetch": "^3.3.2",
     "starknet": "^6.0.0"
   },
   "engines": {
