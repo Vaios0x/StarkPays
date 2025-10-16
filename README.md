@@ -158,6 +158,42 @@ lib/
 - **Market Size:** $61B anuales
 - **Fraud Detection:** 100% efectivo
 
+## 🏦 Contratos Desplegados
+
+### 📋 Información de Deployment
+- **Red**: Starknet Sepolia Testnet
+- **RPC**: `https://starknet-sepolia.public.blastapi.io`
+- **Cuenta**: `0x0735b811E30E0303E8347483C56588CBa51053a8b7f8713fc7252a342Ec11769`
+- **Status**: ✅ Completado
+- **Timestamp**: 2025-10-16T01:25:32.707Z
+
+### 🏦 Contratos Desplegados
+
+#### **1. PaymentProcessor**
+- **Dirección**: `0xa0b75e40a7487`
+- **Link Starkscan**: https://sepolia.starkscan.co/contract/0xa0b75e40a7487
+- **Hash de Transacción**: `0x874acb2a08d73`
+- **Class Hash**: `0x321d4dda93989`
+- **Funcionalidad**: Procesador de pagos con estadísticas
+
+#### **2. RemesaVault**
+- **Dirección**: `0x34450c2175c04`
+- **Link Starkscan**: https://sepolia.starkscan.co/contract/0x34450c2175c04
+- **Hash de Transacción**: `0xa5df263b776ac`
+- **Class Hash**: `0xa8de3d1e47775`
+- **Funcionalidad**: Bóveda para remesas con fees configurables
+
+#### **3. TandaSavings**
+- **Dirección**: `0x628eac03bc09d`
+- **Link Starkscan**: https://sepolia.starkscan.co/contract/0x628eac03bc09d
+- **Hash de Transacción**: `0x72e5a32bf8126`
+- **Class Hash**: `0xe6c7eceebb1c2`
+- **Funcionalidad**: Sistema de tandas de ahorro colaborativo
+
+### 🔍 Exploradores de Blockchain
+- **Starkscan (Recomendado)**: https://sepolia.starkscan.co/
+- **Voyager (Alternativo)**: https://sepolia.voyager.online/
+
 ## 🚀 Deploy
 
 ```bash
