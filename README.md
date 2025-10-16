@@ -1,10 +1,92 @@
-# 🏗 Scaffold-Stark
+# 🏗 StarkPays - Plataforma de Pagos y Remesas Descentralizada
 
 <h4 align="center">
   <a href="https://docs.scaffoldstark.com/">Documentation</a> |
   <a href="https://scaffoldstark.com/">Website</a> |
   <a href="https://scaffold-stark-demo.vercel.app/debug">Demo</a>
 </h4>
+
+🚀 **StarkPays** es una plataforma de pagos y remesas descentralizada construida en Starknet, que incluye tres contratos inteligentes principales: PaymentProcessor, RemesaVault y TandaSavings.
+
+## 📋 Contratos Desplegados en Sepolia
+
+### 🔗 Enlaces de Contratos
+
+#### **PaymentProcessor**
+- **Dirección**: `0x7188039bb062bfa53b24c7d529301c9f0495abe1ef660788f4a12d86394e508`
+- **Starkscan**: [Ver en Sepolia](https://sepolia.starkscan.co/contract/0x7188039bb062bfa53b24c7d529301c9f0495abe1ef660788f4a12d86394e508)
+- **Class Hash**: `0x3de306cfb21a9720fc4815fa449f21c6394265196955f8563bcf12649ac61e0`
+
+#### **RemesaVault**
+- **Dirección**: `0x6d919b7463697668ca357e40e33c488d28f84eed55914c98a6a5bfc7feff9a0`
+- **Starkscan**: [Ver en Sepolia](https://sepolia.starkscan.co/contract/0x6d919b7463697668ca357e40e33c488d28f84eed55914c98a6a5bfc7feff9a0)
+- **Class Hash**: `0x6f8d5097737f700df772954853bdb2190eb9841b7ad74b93d06793fe81f5a1b`
+
+#### **TandaSavings**
+- **Dirección**: `0x6efe48d74ebdea9c5b797b399808a0f3770346cf7cdd6e240a06be5ea06e482`
+- **Starkscan**: [Ver en Sepolia](https://sepolia.starkscan.co/contract/0x6efe48d74ebdea9c5b797b399808a0f3770346cf7cdd6e240a06be5ea06e482)
+- **Class Hash**: `0x26a3f687ad2e66e5c3ad0f5c0e0ec05427d4bd0fc5ddeaf051f5853e2c24949`
+
+## 🎯 Funcionalidades
+
+### **PaymentProcessor**
+- Procesamiento de pagos descentralizado
+- Estadísticas de volumen y transacciones
+- Integración con merchants
+
+### **RemesaVault**
+- Sistema de transferencias internacionales
+- Gestión de fees de plataforma
+- Estadísticas de plataforma
+
+### **TandaSavings**
+- Sistema de tandas/roscas colaborativas
+- Creación y gestión de grupos de ahorro
+- Contribuciones y pagos automáticos
+
+## 🛠️ Tecnologías Utilizadas
+
+- **Starknet**: Blockchain principal
+- **Cairo 2.12.2**: Lenguaje de programación
+- **Scaffold-Stark**: Framework de desarrollo
+- **Next.js**: Frontend framework
+- **Starknet.js**: Librería de interacción
+- **Starknet Foundry**: Herramientas de desarrollo
+
+## 🚀 Inicio Rápido
+
+1. **Clonar el repositorio**:
+```bash
+git clone <repository-url>
+cd starkpays-scaffold
+```
+
+2. **Instalar dependencias**:
+```bash
+yarn install
+```
+
+3. **Configurar variables de entorno**:
+```bash
+cp packages/snfoundry/.env.example packages/snfoundry/.env
+cp packages/nextjs/.env.example packages/nextjs/.env
+```
+
+4. **Ejecutar el frontend**:
+```bash
+yarn start
+```
+
+5. **Visitar la aplicación**: `http://localhost:3000`
+
+## 📱 Interfaz de Usuario
+
+- **Dashboard Principal**: Estadísticas en tiempo real de todos los contratos
+- **Página de Contratos**: Interacciones directas con los contratos
+- **Debug Page**: Herramientas de desarrollo avanzadas
+- **Enlaces a Starkscan**: Verificación de transacciones en blockchain
+
+---
 
 🧪 An open-source, up-to-date toolkit for building decentralized applications (dapps) on Starknet blockchain. It's designed to make it easier for developers to create and deploy smart contracts and build user interfaces that interact with those contracts.
 

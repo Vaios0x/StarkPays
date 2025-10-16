@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useRef } from "react";
 import { useGlobalState } from "~~/services/store/store";
 import { priceService } from "~~/services/web3/PriceService";

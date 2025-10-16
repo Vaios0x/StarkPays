@@ -1,3 +1,5 @@
+"use client";
+
 import * as chains from "@starknet-react/chains";
 import scaffoldConfig from "~~/scaffold.config";
 import { useEffect, useState } from "react";

@@ -1,40 +1,25 @@
-"use client";
+import { ExternalLinkIcon } from "@heroicons/react/24/outline";
+import { useTargetNetwork } from "~~/hooks/scaffold-stark/useTargetNetwork";
 
-import {
-  Address as AddressType,
-  devnet,
-  sepolia,
-} from "@starknet-react/chains";
-import { MagnifyingGlassIcon } from "@heroicons/react/24/outline";
-import { useNetwork } from "@starknet-react/core";
-import Image from "next/image";
-import dynamic from "next/dynamic";
-import { useRouter } from "next/navigation";
-
-const GenericModal = dynamic(
-  () => import("./CustomConnectButton/GenericModal"),
-  { ssr: false },
-);
-import { useTheme } from "next-themes";
-
+/**
+ * Block explorer button for devnet
+ */
 export const BlockExplorerDevnet = () => {
-  const router = useRouter();
-  const { chain: ConnectedChain } = useNetwork();
+  const { targetNetwork } = useTargetNetwork();
 
-  // Render only on devnet chain
-  if (ConnectedChain?.id !== devnet.id) {
+  if (targetNetwork.network !== "devnet") {
     return null;
   }
 
   return (
-    <div onClick={() => router.push("/blockexplorer")}>
-      <label
-        htmlFor="sepolia-blockexplorer-modal"
-        className="btn btn-sm font-normal gap-1 border border-[#32BAC4] shadow-none"
-      >
-        <MagnifyingGlassIcon className="h-4 w-4 text-[#32BAC4]" />
-        <span>Block Explorer</span>
-      </label>
-    </div>
+    <a
+      className="btn btn-sm font-normal gap-1 cursor-pointer border border-[#32BAC4] shadow-none"
+      href={`http://localhost:5050/`}
+      target="_blank"
+      rel="noreferrer"
+    >
+      <ExternalLinkIcon className="h-4 w-4 text-[#32BAC4]" />
+      <span>Devnet Explorer</span>
+    </a>
   );
 };

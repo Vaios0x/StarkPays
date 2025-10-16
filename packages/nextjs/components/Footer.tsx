@@ -51,12 +51,12 @@ export const Footer = () => {
               </>
             )}
             <Link
-              href={"/configure"}
+              href={"/contracts"}
               passHref
               className="btn btn-sm font-normal gap-1 cursor-pointer border border-[#32BAC4] shadow-none"
             >
               <Cog8ToothIcon className="h-4 w-4 text-[#32BAC4]" />
-              <span>Configure Contracts</span>
+              <span>Interact with Contracts</span>
             </Link>
             {nativeCurrencyPrice > 0 && (
               <div>

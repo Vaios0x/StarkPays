@@ -45,8 +45,26 @@ import { green } from "./helpers/colorize-log";
  * @returns {Promise<void>}
  */
 const deployScript = async (): Promise<void> => {
+  // Deploy PaymentProcessor
   await deployContract({
-    contract: "YourContract",
+    contract: "PaymentProcessor",
+    constructorArgs: {
+      owner: deployer.address,
+    },
+  });
+
+  // Deploy RemesaVault
+  await deployContract({
+    contract: "RemesaVault",
+    constructorArgs: {
+      owner: deployer.address,
+      platform_fee_bps: 50, // 0.5% fee
+    },
+  });
+
+  // Deploy TandaSavings
+  await deployContract({
+    contract: "TandaSavings",
     constructorArgs: {
       owner: deployer.address,
     },

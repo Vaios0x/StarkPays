@@ -1,3 +1,5 @@
+"use client";
+
 import { useTargetNetwork } from "./useTargetNetwork";
 import {
   Contract,

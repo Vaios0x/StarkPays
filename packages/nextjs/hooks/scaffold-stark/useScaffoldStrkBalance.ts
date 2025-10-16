@@ -1,3 +1,5 @@
+"use client";
+
 import { Address } from "@starknet-react/chains";
 import { useDeployedContractInfo } from "./useDeployedContractInfo";
 import { useReadContract } from "@starknet-react/core";

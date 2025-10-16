@@ -1,3 +1,5 @@
+"use client";
+
 import { useMemo, useState, useEffect, useCallback } from "react";
 import { RpcProvider } from "starknet";
 import { useTargetNetwork } from "./useTargetNetwork";
